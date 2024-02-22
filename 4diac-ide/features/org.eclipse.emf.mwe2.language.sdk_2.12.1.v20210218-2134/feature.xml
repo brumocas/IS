@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.emf.mwe2.language.sdk"
+      label="%featureName"
+      version="2.12.1.v20210218-2134"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="http://www.eclipse.org/legal/epl-2.0">
+      Copyright (c) 2007 IBM Corporation and others.
+This program and the accompanying materials are made available under the
+terms of the Eclipse Public License 2.0 which is available at
+http://www.eclipse.org/legal/epl-2.0.
+
+SPDX-License-Identifier: EPL-2.0
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <url>
+      <update label="%UpdateSiteName" url="https://download.eclipse.org/modeling/emft/mwe/updates/"/>
+      <discovery label="%UpdateSiteName" url="https://download.eclipse.org/modeling/emft/mwe/updates/"/>
+   </url>
+
+   <includes
+         id="org.eclipse.emf.mwe2.runtime.sdk"
+         version="2.12.1.v20210218-2134"/>
+ 
+   <includes
+         id="org.eclipse.emf.mwe2.launcher"
+         version="2.12.1.v20210218-2134"/>
+   <includes
+         id="org.eclipse.emf.mwe2.launcher.source"
+         version="2.12.1.v20210218-2134"/>
+
+   <requires>
+      <import feature="org.eclipse.xtext.ui" version="2.20.0" match="compatible"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.emf.mwe2.language"
+         download-size="224"
+         install-size="530"
+         version="2.12.1.v20210218-2134"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.mwe2.language.ide"
+         download-size="88"
+         install-size="271"
+         version="2.12.1.v20210218-2134"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.mwe2.language.ui"
+         download-size="64"
+         install-size="139"
+         version="2.12.1.v20210218-2134"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.mwe2.launch.ui"
+         download-size="18"
+         install-size="31"
+         version="2.12.1.v20210218-2134"
+         unpack="false"/>
+   <plugin
+         id="org.eclipse.emf.mwe2.language.source"
+         download-size="144"
+         install-size="673"
+         version="2.12.1.v20210218-2134"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.mwe2.language.ide.source"
+         download-size="64"
+         install-size="540"
+         version="2.12.1.v20210218-2134"
+         unpack="false"/>
+   <plugin
+         id="org.eclipse.emf.mwe2.language.ui.source"
+         download-size="34"
+         install-size="90"
+         version="2.12.1.v20210218-2134"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.mwe2.launch.ui.source"
+         download-size="11"
+         install-size="19"
+         version="2.12.1.v20210218-2134"
+         unpack="false"/>
+
+</feature>

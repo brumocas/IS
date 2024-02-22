@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2017 Kiel University and others.
+  
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+  
+  SPDX-License-Identifier: EPL-2.0
+-->
+<feature
+      id="org.eclipse.elk.algorithms.feature"
+      label="Eclipse Layout Kernel (Incubation) - Layout Algorithms"
+      version="0.7.1"
+      provider-name="Eclipse Layout Kernel"
+      plugin="org.eclipse.elk.core">
+
+   <description url="http://www.eclipse.org/elk">
+      The Eclipse Layout Kernel provides automatic layout to diagram
+editors and viewers. This feature adds automatic layout algorithms.
+   </description>
+
+   <copyright>
+      Copyright (c) 2017 Kiel University and others.
+
+
+This program and the accompanying materials are made available under the
+terms of the Eclipse Public License 2.0 which is available at
+http://www.eclipse.org/legal/epl-2.0.
+
+SPDX-License-Identifier: EPL-2.0
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="org.eclipse.elk.feature" version="0.7.1"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.elk.alg.common"
+         download-size="220"
+         install-size="459"
+         version="0.7.1"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.elk.alg.disco"
+         download-size="75"
+         install-size="178"
+         version="0.7.1"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.elk.alg.layered"
+         download-size="1131"
+         install-size="2687"
+         version="0.7.1"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.elk.alg.mrtree"
+         download-size="105"
+         install-size="259"
+         version="0.7.1"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.elk.alg.rectpacking"
+         download-size="61"
+         install-size="114"
+         version="0.7.1"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.elk.alg.force"
+         download-size="129"
+         install-size="484"
+         version="0.7.1"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.elk.alg.radial"
+         download-size="87"
+         install-size="208"
+         version="0.7.1"
+         unpack="false"/>
+  
+   <plugin
+         id="org.eclipse.elk.alg.spore"
+         download-size="362"
+         install-size="1505"
+         version="0.7.1"
+         unpack="false"/>
+  
+</feature>
