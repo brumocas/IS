@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+ Copyright (c) 2014 fortiss GmbH
+  
+ This program and the accompanying materials are made available under the
+ terms of the Eclipse Public License 2.0 which is available at
+ http://www.eclipse.org/legal/epl-2.0.
+
+ SPDX-License-Identifier: EPL-2.0
+ 
+ Contributors:
+   Monika Wenger
+     - initial API and implementation and/or initial documentation
+-->
+<introContent>
+
+	<extensionContent id="page_tutorials" name="Tutorials" path="tutorials/@">
+		<group style-id="content-group" id="orgfordiacide-introLink-group">
+		<link label="Use 4diac IDE locally (Blinking application)" url="http://org.eclipse.ui.intro/showHelpTopic?id=/org.eclipse.fordiac.ide/html/4diacIDE/use4diacLocally.html" id="orgfordiacide-webLink"  style-id="content-link">
+          	<text>This tutorial explains how to develop a sample application and test it locally.</text>
+       	</link>
+		
+		<link label="Create a distributed application" url="http://org.eclipse.ui.intro/showHelpTopic?id=/org.eclipse.fordiac.ide/html/4diacIDE/distribute4diac.html" id="orgfordiacide-webLink"  style-id="content-link">
+          	<text>This tutorial explains how to expand the sample application to a distributed one.</text>
+       	</link>
+		
+		<link label="Deploy remotely" url="http://org.eclipse.ui.intro/showHelpTopic?id=/org.eclipse.fordiac.ide/html/4diacIDE/use4diacRemotely.html" id="orgfordiacide-webLink"  style-id="content-link">
+          	<text>This tutorial shows how to deploy applications to several devices and debug it.</text>
+       	</link>
+		</group>
+	</extensionContent>    
+
+	<extensionContent id="page_fbs" name="Tutorials" path="tutorials/@">
+		<group style-id="content-group" id="orgfordiacide-introLink-group">
+		<link label="Developing Function Blocks" url="http://org.eclipse.ui.intro/showHelpTopic?id=/org.eclipse.fordiac.ide/html/4diacIDE/createOwnTypes.html" id="orgfordiacide-webLink"  style-id="content-link">
+          	<text>This tutorial explains how to create your own Function Block.</text>
+       	</link>
+
+		<link label="Learn more" url="http://org.eclipse.ui.intro/showHelpTopic?id=/org.eclipse.fordiac.ide/html/4diacIDE/otherUseful.html" id="orgfordiacide-webLink"  style-id="content-link">
+          	<text>Further features 4diac IDE offers.</text>
+       	</link>
+		
+		<link label="Advanced features" url="http://org.eclipse.ui.intro/showHelpTopic?id=/org.eclipse.fordiac.ide/html/4diacIDE/advancedFeatures.html" id="orgfordiacide-webLink"  style-id="content-link">
+          	<text>Introduction to adapters and subapplications for structuring larger applications.</text>
+       	</link>
+       	
+		</group>
+	</extensionContent> 
+	
+</introContent>

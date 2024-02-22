@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+repositories/file\:_home_bruno_Master_IS_4diac-ide_configuration_org.eclipse.osgi_182_data_listener_1925729951/isSystem=true
+repositories/file\:_home_bruno_Master_IS_4diac-ide_configuration_org.eclipse.osgi_182_data_listener_1925729951/name=dropins
+repositories/file\:_home_bruno_Master_IS_4diac-ide_configuration_org.eclipse.osgi_182_data_listener_1925729951/suffix=content.xml
+repositories/file\:_home_bruno_Master_IS_4diac-ide_configuration_org.eclipse.osgi_182_data_listener_1925729951/type=org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository
+repositories/file\:_home_bruno_Master_IS_4diac-ide_configuration_org.eclipse.osgi_182_data_listener_1925729951/uri=file\:/home/bruno/Master/IS/4diac-ide/configuration/org.eclipse.osgi/182/data/listener_1925729951/
+repositories/file\:_home_bruno_Master_IS_4diac-ide_configuration_org.eclipse.osgi_182_data_listener_1925729951/version=1.0.0
+repositories/https\:__download.eclipse.org_4diac_updates_latest/count=1
+repositories/https\:__download.eclipse.org_4diac_updates_latest/enabled=true
+repositories/https\:__download.eclipse.org_4diac_updates_latest/name=org.eclipse.fordiac.ide.product
+repositories/https\:__download.eclipse.org_4diac_updates_latest/nickname=Eclipse 4diac Latest
+repositories/https\:__download.eclipse.org_4diac_updates_latest/suffix=content.xml.xz
+repositories/https\:__download.eclipse.org_4diac_updates_latest/type=org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository
+repositories/https\:__download.eclipse.org_4diac_updates_latest/uri=https\://download.eclipse.org/4diac/updates/latest
+repositories/https\:__download.eclipse.org_4diac_updates_latest/version=1.0.0
