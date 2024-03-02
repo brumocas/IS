@@ -1,0 +1,63 @@
+!SESSION 2024-02-27 13:14:04.837 -----------------------------------------------
+eclipse.buildId=1.11.0
+java.version=11.0.21
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.fordiac.ide.ui 4 0 2024-02-27 13:14:14.423
+!MESSAGE Icon URL handler registered.
+
+!ENTRY org.eclipse.fordiac.ide.systemmanagement 4 0 2024-02-27 13:15:23.350
+!MESSAGE Monitoring: Cann  not connect to device FORTE_PC
+!STACK 0
+org.eclipse.fordiac.ide.deployment.exceptions.DeploymentException: Could not connect to device
+	at org.eclipse.fordiac.ide.deployment.iec61499.EthernetDeviceManagementCommunicationHandler.connect(EthernetDeviceManagementCommunicationHandler.java:69)
+	at org.eclipse.fordiac.ide.deployment.interactors.AbstractDeviceManagementInteractor.connect(AbstractDeviceManagementInteractor.java:43)
+	at org.eclipse.fordiac.ide.monitoring.EnableSystemMonitoringRunnable.connectToDevices(EnableSystemMonitoringRunnable.java:59)
+	at org.eclipse.fordiac.ide.monitoring.EnableSystemMonitoringRunnable.run(EnableSystemMonitoringRunnable.java:45)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.eclipse.fordiac.ide.deployment.iec61499.EthernetDeviceManagementCommunicationHandler.connect(EthernetDeviceManagementCommunicationHandler.java:64)
+	... 4 more
+
+!ENTRY org.eclipse.fordiac.ide.systemmanagement 4 0 2024-02-27 13:15:32.306
+!MESSAGE Monitoring: Cann  not connect to device FORTE_PC
+!STACK 0
+org.eclipse.fordiac.ide.deployment.exceptions.DeploymentException: Could not connect to device
+	at org.eclipse.fordiac.ide.deployment.iec61499.EthernetDeviceManagementCommunicationHandler.connect(EthernetDeviceManagementCommunicationHandler.java:69)
+	at org.eclipse.fordiac.ide.deployment.interactors.AbstractDeviceManagementInteractor.connect(AbstractDeviceManagementInteractor.java:43)
+	at org.eclipse.fordiac.ide.monitoring.EnableSystemMonitoringRunnable.connectToDevices(EnableSystemMonitoringRunnable.java:59)
+	at org.eclipse.fordiac.ide.monitoring.EnableSystemMonitoringRunnable.run(EnableSystemMonitoringRunnable.java:45)
+	at org.eclipse.fordiac.ide.monitoring.SystemMonitoringData.enableSystemSynch(SystemMonitoringData.java:91)
+	at org.eclipse.fordiac.ide.monitoring.MonitoringManager.enableSystemSynch(MonitoringManager.java:155)
+	at org.eclipse.fordiac.ide.deployment.DownloadRunnable.reenableMonitoring(DownloadRunnable.java:306)
+	at org.eclipse.fordiac.ide.deployment.DownloadRunnable.run(DownloadRunnable.java:107)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.eclipse.fordiac.ide.deployment.iec61499.EthernetDeviceManagementCommunicationHandler.connect(EthernetDeviceManagementCommunicationHandler.java:64)
+	... 8 more
+!SESSION 2024-02-27 13:17:23.970 -----------------------------------------------
+eclipse.buildId=1.11.0
+java.version=11.0.21
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-02-27 13:17:29.553
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.fordiac.ide.ui 4 0 2024-02-27 13:17:30.355
+!MESSAGE Icon URL handler registered.

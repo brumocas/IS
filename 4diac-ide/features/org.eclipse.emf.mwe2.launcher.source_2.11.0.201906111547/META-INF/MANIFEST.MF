@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Built-By: genie.emf
+Created-By: Apache Maven 3.6.0
+Build-Jdk: 1.8.0_192
+
+Name: META-INF/maven/org.eclipse.emf/org.eclipse.emf.mwe2.launcher/pom
+ .xml
+SHA1-Digest: 33oziPDnm4cX7EihRey9NPSSsKA=
+
+Name: epl-v10.html
+SHA1-Digest: jYDaDJLBJpthCwPMgGFVYASJjIU=
+
+Name: feature.xml
+SHA1-Digest: Kdvt1v3WQIF8fE9LmOwzLPngOOg=
+
+Name: META-INF/maven/org.eclipse.emf/org.eclipse.emf.mwe2.launcher/pom
+ .properties
+SHA1-Digest: vPSJoBRIMuKj4tiog3agy+vzuBU=
+
+Name: feature.properties
+SHA1-Digest: 545Y5SzhdcY6STypcq5HJGIt5Gg=
+
+Name: license.html
+SHA1-Digest: Z5WKoRSIDCgQNswUpOU/oSPE2a0=
+

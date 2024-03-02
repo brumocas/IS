@@ -2,7 +2,6 @@
 <root>
 <contributor name="org.eclipse.platform"/>
 <contributor name="org.eclipse.ui.intro"/>
-<contributor name="org.eclipse.egit.doc"/>
 <contributor name="org.eclipse.fordiac.ide"/>
 <contributor name="org.eclipse.jdt"/>
 <contributor name="org.eclipse.ui.intro.universal"/>

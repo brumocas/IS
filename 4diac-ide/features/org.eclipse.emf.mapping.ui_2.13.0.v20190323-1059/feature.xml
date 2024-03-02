@@ -39,7 +39,7 @@ http://www.eclipse.org/legal/epl-v20.html
    <plugin
          id="org.eclipse.emf.mapping.ui"
          download-size="145"
-         install-size="268"
+         install-size="269"
          version="2.10.0.v20181104-0733"
          unpack="false"/>
 
