@@ -1,12 +1,14 @@
 Manifest-Version: 1.0
-Created-By: Maven Archiver 3.5.0
-Build-Jdk-Spec: 11
+Archiver-Version: Plexus Archiver
+Built-By: genie.emf
+Created-By: Apache Maven 3.0.5
+Build-Jdk: 1.8.0_192
 
 Name: epl-2.0.html
 SHA-256-Digest: koxKavfpz4JYnlYPmP+7at5zhbWf7Iy07zamu5HPcBg=
 
 Name: feature.xml
-SHA-256-Digest: 7OD3YEHGZ3oRipIKf2XrJ0P9EE0BMomm+6xB75bYPRs=
+SHA-256-Digest: DE8civ0O0jabhsUGBJTf7FwIlCZ6bJCK8ibTIKjfYU8=
 
 Name: feature.properties
 SHA-256-Digest: GVsqd0IommAgi5R8D8vyfmk31Psj7gAcEIWNcPhKdH8=

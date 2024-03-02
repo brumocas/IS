@@ -1,14 +1,14 @@
 Signature-Version: 1.0
-Created-By: 11.0.10 (AdoptOpenJDK)
-SHA-256-Digest-Manifest: Sspf8UOUW5tzuSzjnciB26CjWlzbn81Fa/aznWL9LP0=
-SHA-256-Digest-Manifest-Main-Attributes: VY78hpPLQQcQWsSBC6hJVVQI+2YQxvr
- V/A0xv/y73/0=
+SHA-256-Digest-Manifest-Main-Attributes: xswmy5fBi1CVyUo9TEnkA/21IGo5p
+ WzVDdnaPPY/LMc=
+SHA-256-Digest-Manifest: YjdTM5ygNS42nuClUvK4KSSKdypB3R3dOBEXapYl6Zo=
+Created-By: 1.8.0_51 (Oracle Corporation)
 
 Name: epl-2.0.html
 SHA-256-Digest: AED4dAeGrOY0hc5nW8gJmyCMPlZ5rTF8ACL9TK1dx/Q=
 
 Name: feature.xml
-SHA-256-Digest: 0WnL0UlNwWJ/5s7CLUaaYRx+f0ivS1cI+Ul4mm6ivYY=
+SHA-256-Digest: uNdpm/2fBLuyZfRgxeob3mW+ggJtEB9E5KADiDeK5kI=
 
 Name: feature.properties
 SHA-256-Digest: mfXR7SVNpXQ/qN4nL6KexEuJ3gNw/+2glotpPbd3sSc=
