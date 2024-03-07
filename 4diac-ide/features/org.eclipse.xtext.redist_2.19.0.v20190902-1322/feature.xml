@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.xtext.redist"
+      label="%featureName"
+      version="2.19.0.v20190902-1322"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      Copyright (c) 2009, 2018 itemis AG (http://www.itemis.eu) and others.
+
+All rights reserved. This program and the accompanying materials
+are made available under the terms of the Eclipse Public License
+v1.0 which accompanies this distribution, and is available at
+http://www.eclipse.org/legal/epl-v10.html Description here.
+   </copyright>
+   <license url="%licenseURL">
+      %license
+   </license>
+   <includes
+         id="org.eclipse.xtext.xbase"
+         version="2.19.0.v20190902-1322"/>
+
+   <requires>
+      <import plugin="com.google.guava" version="27.1.0" match="compatible"/>
+      <import plugin="com.google.inject" version="3.0.0" match="greaterOrEqual"/>
+      <import plugin="org.objectweb.asm" version="7.1.0" match="compatible"/>
+      <import plugin="javax.inject" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="io.github.classgraph" version="4.8.35" match="compatible"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.xtext"
+         download-size="2495"
+         install-size="5671"
+         version="2.19.0.v20190902-0737"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.source"
+         download-size="1606"
+         install-size="5171"
+         version="2.19.0.v20190902-0737"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.util"
+         download-size="279"
+         install-size="595"
+         version="2.19.0.v20190902-0737"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.util.source"
+         download-size="143"
+         install-size="401"
+         version="2.19.0.v20190902-0737"
+         unpack="false"/>
+
+   <plugin
+         id="org.antlr.runtime"
+         download-size="201"
+         install-size="426"
+         version="3.2.0.v201101311130"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.commons.lang"
+         download-size="291"
+         install-size="618"
+         version="2.6.0.v201404270220"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.log4j"
+         download-size="405"
+         install-size="775"
+         version="1.2.15.v201012070815"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.logging"
+         download-size="6"
+         install-size="9"
+         version="1.2.15.v20190902-1023"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.logging.source"
+         download-size="4"
+         install-size="6"
+         version="1.2.15.v20190902-1023"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.common.types"
+         download-size="463"
+         install-size="1099"
+         version="2.19.0.v20190902-0952"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.common.types.source"
+         download-size="345"
+         install-size="1362"
+         version="2.19.0.v20190902-0952"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.builder"
+         download-size="362"
+         install-size="816"
+         version="2.19.0.v20190902-1023"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.builder.source"
+         download-size="206"
+         install-size="699"
+         version="2.19.0.v20190902-1023"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ecore"
+         download-size="9"
+         install-size="16"
+         version="2.19.0.v20190902-0952"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ecore.source"
+         download-size="6"
+         install-size="12"
+         version="2.19.0.v20190902-0952"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.smap"
+         download-size="12"
+         install-size="23"
+         version="2.19.0.v20190902-0952"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.smap.source"
+         download-size="10"
+         install-size="28"
+         version="2.19.0.v20190902-0952"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ui"
+         download-size="1783"
+         install-size="3796"
+         version="2.19.0.v20190902-1023"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ui.source"
+         download-size="1095"
+         install-size="2985"
+         version="2.19.0.v20190902-1023"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ui.codemining"
+         download-size="12"
+         install-size="25"
+         version="2.19.0.v20190902-1023"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ui.codemining.source"
+         download-size="5"
+         install-size="12"
+         version="2.19.0.v20190902-1023"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.common.types.ui"
+         download-size="238"
+         install-size="527"
+         version="2.19.0.v20190902-1023"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.common.types.ui.source"
+         download-size="134"
+         install-size="404"
+         version="2.19.0.v20190902-1023"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.common.types.shared"
+         download-size="11"
+         install-size="19"
+         version="2.19.0.v20190902-1023"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.common.types.shared.source"
+         download-size="8"
+         install-size="14"
+         version="2.19.0.v20190902-1023"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.common.types.shared.jdt38"
+         download-size="12"
+         install-size="22"
+         version="2.19.0.v20190902-1023"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.common.types.shared.jdt38.source"
+         download-size="7"
+         install-size="14"
+         version="2.19.0.v20190902-1023"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ui.shared"
+         download-size="49"
+         install-size="103"
+         version="2.19.0.v20190902-1023"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ui.shared.source"
+         download-size="20"
+         install-size="55"
+         version="2.19.0.v20190902-1023"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ui.codetemplates"
+         download-size="176"
+         install-size="411"
+         version="2.19.0.v20190902-1023"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ui.codetemplates.source"
+         download-size="113"
+         install-size="622"
+         version="2.19.0.v20190902-1023"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ui.codetemplates.ide"
+         download-size="121"
+         install-size="356"
+         version="2.19.0.v20190902-1023"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ui.codetemplates.ide.source"
+         download-size="80"
+         install-size="719"
+         version="2.19.0.v20190902-1023"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ui.codetemplates.ui"
+         download-size="112"
+         install-size="254"
+         version="2.19.0.v20190902-1023"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ui.codetemplates.ui.source"
+         download-size="69"
+         install-size="181"
+         version="2.19.0.v20190902-1023"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.common.types.edit"
+         download-size="212"
+         install-size="307"
+         version="2.19.0.v20190902-1023"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.common.types.edit.source"
+         download-size="86"
+         install-size="293"
+         version="2.19.0.v20190902-1023"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtend.lib"
+         download-size="93"
+         install-size="228"
+         version="2.19.0.v20190902-0728"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtend.lib.source"
+         download-size="98"
+         install-size="289"
+         version="2.19.0.v20190902-0728"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtend.lib.macro"
+         download-size="60"
+         install-size="112"
+         version="2.19.0.v20190902-0728"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtend.lib.macro.source"
+         download-size="74"
+         install-size="185"
+         version="2.19.0.v20190902-0728"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ide"
+         download-size="496"
+         install-size="1167"
+         version="2.19.0.v20190902-0737"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xtext.ide.source"
+         download-size="598"
+         install-size="1514"
+         version="2.19.0.v20190902-0737"
+         unpack="false"/>
+
+</feature>

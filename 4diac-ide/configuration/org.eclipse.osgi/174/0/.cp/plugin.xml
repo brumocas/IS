@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="org.eclipse.fordiac.ide.Perspective"
+            fixed="false"
+            icon="fordiacimage://ICON_SYSTEM_PERSPECTIVE"
+            id="org.eclipse.fordiac.ide.SystemPerspective"
+            name="%perspective.name">
+      </perspective>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.ui.ide.workbench"
+            name="4diac IDE">
+         <property
+               name="appName"
+               value="4diac IDE">
+         </property>
+         <property
+               name="aboutImage"
+               value="platform:/plugin/org.eclipse.fordiac.ide.images/images/dialog.png">
+         </property>
+         <property
+               name="aboutText"
+               value="%aboutText">
+         </property>
+         <property
+               name="windowImages"
+               value="icons/fordiac16.png,icons/fordiac32.png,icons/fordiac48.png,icons/fordiac256.png">
+         </property>
+         <property
+               name="startupProgressRect"
+               value="375,375,172,4">
+         </property>
+         <property
+               name="introTitle"
+               value="Welcome to 4diac IDE">
+         </property>
+         <property
+               name="introBrandingImageText"
+               value="%product.name">
+         </property>
+         <property
+               name="introBrandingImage"
+               value="product:intro/graphics/fordiac_logo.png">
+         </property>
+         <property
+    name="cssTheme"
+    value="org.eclipse.e4.ui.css.theme.e4_default">
+</property>
+<property
+    name="applicationCSSResources"
+    value="platform:/plugin/org.eclipse.platform/images/">
+</property>
+<property
+      name="preferenceCustomization"
+      value="plugin_customization.ini">
+</property>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.splashHandlers">
+      <splashHandler
+            class="org.eclipse.fordiac.ide.SplashHandler"
+            id="org.eclipse.fordiac.ide.splashHandlers">
+      </splashHandler>
+      <splashHandlerProductBinding
+            productId="org.eclipse.fordiac.ide.product"
+            splashId="org.eclipse.fordiac.ide.splashHandlers">
+      </splashHandlerProductBinding>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+            <menuContribution
+                  locationURI="menu:org.eclipse.fordiac.ide.extras">
+               <command
+                     commandId="org.eclipse.ui.views.showView"
+                     label="%command.label"
+                     style="push">
+                  <parameter
+                        name="org.eclipse.ui.views.showView.viewId"
+                        value="org.eclipse.pde.runtime.LogView">
+                  </parameter>
+               </command>
+            </menuContribution>
+   </extension>
+   
+   
+   <extension point="org.eclipse.ui.intro">
+   		<introProductBinding introId="org.eclipse.ui.intro.universal" productId="org.eclipse.fordiac.ide.product"></introProductBinding>
+   </extension>
+   <extension point="org.eclipse.ui.intro.configExtension">
+       <configExtension
+            configId="org.eclipse.ui.intro.universalConfig"
+            content="intro/whatsnew.xml">
+      </configExtension>
+      <configExtension
+            configId="org.eclipse.ui.intro.universalConfig"
+            content="intro/overview.xml">
+      </configExtension>
+      <configExtension
+            configId="org.eclipse.ui.intro.universalConfig"
+            content="intro/tutorials.xml">
+      </configExtension>
+   </extension>
+   <extension
+         point="org.eclipse.help.toc">
+      <toc
+            file="html/toc.xml"
+            primary="true">
+      </toc>
+   </extension>
+   <extension
+         point="org.eclipse.ui.intro.quicklinks">
+       <command
+            id="org.eclipse.ui.newWizard(newWizardId=org.eclipse.fordiac.ide.systemmanagement.ui.wizard.NewSystemWizard)"
+            description="Create a new IEC 61499 system"
+            label="Create New System"
+            importance="medium"
+            resolution="launchbar">
+      </command>
+       <command
+            id="org.eclipse.ui.file.import(importWizardId=org.eclipse.ui.wizards.import.ExternalProject)"
+            description="Import existing 4diac IDE projects from the filesystem or an archive"
+            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/import-existing-project.png"
+            label="Import Existing Projects"
+            resolution="launchbar">
+      </command>   
+      <override
+            command="org.eclipse.ui.newWizard*"
+            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/new-project.png"
+            theme="org.eclipse.ui.intro.universal.solstice">
+      </override>
+       <url
+            location="http://org.eclipse.ui.intro/close"
+            label="Continue to 4diac IDE"
+            description="Close welcome page and work on your system"
+            icon="platform:/plugin/org.eclipse.ui.intro.universal/themes/solstice/graphics/icons/ctool/workbench.png"
+            importance="medium">
+       </url>  
+   </extension>      
+   
+   <!-- If these activties should be needed in the future remove the respective line below -->
+   <extension point="org.eclipse.ui.activities">
+    <activity id="org.eclipse.fordiac.ide.disabledxtensions" name="Hidden activities"/>
+    <activityPatternBinding activityId="org.eclipse.fordiac.ide.disabledxtensions" pattern="org.eclipse.debug.ui.*"/>
+    <activityPatternBinding activityId="org.eclipse.fordiac.ide.disabledxtensions" pattern="org.eclipse.search.*"/>
+    <activityPatternBinding activityId="org.eclipse.fordiac.ide.disabledxtensions" pattern="org.eclipse.team.*" />
+    <activityPatternBinding activityId="org.eclipse.fordiac.ide.disabledxtensions" pattern="org.eclipse.jdt.*" /> 
+    <activityPatternBinding activityId="org.eclipse.fordiac.ide.disabledxtensions" pattern="org.eclipse.pde.*" />
+    <activityPatternBinding activityId="org.eclipse.fordiac.ide.disabledxtensions" pattern="org.eclipse.ui.externaltools.*"/>
+    <activityPatternBinding activityId="org.eclipse.fordiac.ide.disabledxtensions" pattern="org.eclipse.emf.mwe2.*"/>
+    <activityPatternBinding activityId="org.eclipse.fordiac.ide.disabledxtensions" pattern="org.eclipse.ant.*"/>
+    <activityPatternBinding activityId="org.eclipse.fordiac.ide.disabledxtensions" pattern="org.eclipse.emf.*"/> 
+    <activityPatternBinding activityId="org.eclipse.fordiac.ide.disabledxtensions" pattern="org.eclipse.xtext.ui.shared.*"/>
+    <activityPatternBinding activityId="org.eclipse.fordiac.ide.disabledxtensions" pattern="org.eclipse.ui.project.cleanAction"/> 
+    <activityPatternBinding activityId="org.eclipse.fordiac.ide.disabledxtensions" pattern="org.eclipse.ui.project.buildProject"/>
+    <activityPatternBinding activityId="org.eclipse.fordiac.ide.disabledxtensions" pattern="org.eclipse.ui.project.buildAutomatically"/>
+    <activityPatternBinding activityId="org.eclipse.fordiac.ide.disabledxtensions" pattern="org.eclipse.ui.project.buildAll"/>
+    <activityPatternBinding activityId="org.eclipse.fordiac.ide.disabledxtensions" pattern="org.eclipse.ui.project.rebuildAll"/>
+    <activityPatternBinding activityId="org.eclipse.fordiac.ide.disabledxtensions" pattern="org.eclipse.ui.project.buildLast"/>
+    <activityPatternBinding activityId="org.eclipse.fordiac.ide.disabledxtensions" pattern="org.eclipse.xtext.ui.*"/>
+    <activityPatternBinding activityId="org.eclipse.fordiac.ide.disabledxtensions" pattern="org.eclipse.xtext.xtext.ui.*"/>   
+    <activityPatternBinding activityId="org.eclipse.fordiac.ide.disabledxtensions" pattern="org.eclipse.xtend.ide.*"/>   
+    <activityPatternBinding activityId="org.eclipse.fordiac.ide.disabledxtensions" pattern="org.eclipse.xtend.ui.*"/>
+    <activityPatternBinding activityId="org.eclipse.fordiac.ide.disabledxtensions" pattern="org.eclipse.xtend.*"/>   
+   </extension>
+
+</plugin>

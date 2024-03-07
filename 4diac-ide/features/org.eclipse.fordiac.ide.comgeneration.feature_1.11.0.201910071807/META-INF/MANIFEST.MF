@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Built-By: genie.4diac
+Created-By: Apache Maven 3.6.0
+Build-Jdk: 1.8.0_192
+
+Name: feature.xml
+SHA-256-Digest: mAxVDeIOOyH8KmuBGh0Pll3+U9GDXkba1ep711XntSY=
+
