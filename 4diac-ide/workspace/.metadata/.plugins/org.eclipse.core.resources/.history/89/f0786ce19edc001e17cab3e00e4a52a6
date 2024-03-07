@@ -22,7 +22,7 @@
         <Parameter Name="DELAY" Value="1"/>
       </FB>
       <FB Comment="" Name="PROD_MAN" Type="PROD_MAN" x="999.9999999999999" y="999.9999999999999"/>
-      <FB Comment="" Name="CONVEYOR_DS_TS" Type="CONVEYOR_DS_TS" x="6117.647058823529" y="823.5294117647059"/>
+      <FB Comment="" Name="CONVEYOR_DS_TS" Type="CONVEYOR_DS_TS" x="6211.764705882352" y="952.9411764705882"/>
       <EventConnections>
         <Connection Comment="" Destination="MACHINE_SIMULATOR_1.ON-OFF" Source="PROD_MAN.ON-OFF_O" dx1="376.4705882352941"/>
         <Connection Comment="" Destination="MACHINE_SIMULATOR_1_1.ON-OFF" Source="PROD_MAN.ON-OFF_O" dx1="376.4705882352941"/>
