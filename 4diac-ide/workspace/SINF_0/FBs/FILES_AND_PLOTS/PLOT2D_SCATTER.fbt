@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE FBType SYSTEM "http://www.holobloc.com/xml/LibraryElement.dtd">
+<FBType Name="PLOT2D_SCATTER" OpcUa="SERVICE">
+    <InterfaceList>
+        <EventInputs>
+            <Event Name="INIT" Type="Event"/>
+            <Event Name="RUN" Type="Event" OpcUa="Method">
+                <With Var="data"/>
+                <With Var="path"/>
+                <With Var="name"/>
+				<With Var="x_index"/>
+                <With Var="y_index"/>
+            </Event>
+        </EventInputs>
+        <EventOutputs>
+            <Event Name="INIT_O" Type="Event"/>
+            <Event Name="RUN_O" Type="Event" />
+        </EventOutputs>
+        <InputVars>
+            <VarDeclaration Name="data" Type="STRING" OpcUa="Variable"/>
+            <VarDeclaration Name="path" Type="STRING" OpcUa="Variable"/>
+            <VarDeclaration Name="name" Type="STRING" OpcUa="Variable"/>
+            <VarDeclaration Name="x_index" Type="STRING" OpcUa="Variable"/>
+            <VarDeclaration Name="y_index" Type="STRING" OpcUa="Variable"/>
+        </InputVars>
+        <OutputVars/>
+    </InterfaceList>
+</FBType>

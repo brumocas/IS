@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE FBType SYSTEM "http://www.holobloc.com/xml/LibraryElement.dtd">
+<FBType Name="POSTGRE_DB_INSERT_JSON_TIMESERIES" OpcUa="POINT.ENDPOINT">
+    <InterfaceList>
+        <EventInputs>
+            <Event Name="INIT" Type="Event">
+                <With Var="HOST"/>
+                <With Var="PORT"/>
+                <With Var="USER"/>
+                <With Var="PASSWORD"/>
+                <With Var="DBNAME"/>
+                <With Var="TABLE_NAME"/>
+            </Event>
+            <Event Name="RUN" Type="Event">
+                <With Var="TIMESERIES_INDEX"/>
+                <With Var="JSON_TIMESERIES"/>
+            </Event>
+        </EventInputs>
+        <EventOutputs>
+            <Event Name="INIT_O" Type="Event"/>
+            <Event Name="RUN_O" Type="Event"/>
+        </EventOutputs>
+        <InputVars>
+            <VarDeclaration Name="HOST" Type="STRING" OpcUa="Constant"/>
+            <VarDeclaration Name="PORT" Type="UINT" OpcUa="Constant"/>
+            <VarDeclaration Name="USER" Type="STRING" OpcUa="Constant"/>
+            <VarDeclaration Name="PASSWORD" Type="STRING" OpcUa="Constant"/>
+            <VarDeclaration Name="DBNAME" Type="STRING" OpcUa="Constant"/>
+            <VarDeclaration Name="TABLE_NAME" Type="STRING" OpcUa="Constant"/>
+            <VarDeclaration Name="TIMESERIES_INDEX" Type="UINT" OpcUa="Constant"/>
+            <VarDeclaration Name="JSON_TIMESERIES" Type="STRING" OpcUa="Variable.RUN"/>
+        </InputVars>
+        <OutputVars/>
+    </InterfaceList>
+</FBType>
+
