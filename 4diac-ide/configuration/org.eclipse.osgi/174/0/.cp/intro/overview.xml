@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+ Copyright (c) 2014 fortiss GmbH
+  
+ This program and the accompanying materials are made available under the
+ terms of the Eclipse Public License 2.0 which is available at
+ http://www.eclipse.org/legal/epl-2.0.
+
+ SPDX-License-Identifier: EPL-2.0
+ 
+ Contributors:
+   Alois Zoitl, Monika Wenger
+     - initial API and implementation and/or initial documentation
+--><introContent>
+  	<extensionContent id="fordiac-overview-left" name="4diac Framework" path="overview/@">
+       	<group style-id="content-group" id="overview-topleft-group1">
+       	<link label="Eclipse 4diac Framework" url="http://org.eclipse.ui.intro/showHelpTopic?id=/org.eclipse.fordiac.ide/html/before4DIAC/4diacFramework.html" id="orgfordiacide-webLink"  style-id="content-link">
+          	<text>Overview on the component the 4diac framework provides and their interrelation.</text>
+       	</link>
+       	<link label="IEC 61499 101" url="http://org.eclipse.ui.intro/showHelpTopic?id=/org.eclipse.fordiac.ide/html/before4DIAC/iec61499.html" id="orgfordiacide-webLink"  style-id="content-link">
+          	<text>Quick introduction to the IEC 61499 domain specific modelling language for distributed control systems implemented by Eclipse 4diac.</text>
+       	</link>
+       	<link label="Eclipse 4diac IDE Overview" url="http://org.eclipse.ui.intro/showHelpTopic?id=/org.eclipse.fordiac.ide/html/4diacIDE/overview.html" id="orgfordiacide-webLink"  style-id="content-link">
+          	<text>Gives a short overview on the 4diac IDE.</text>
+       	</link>
+		<link label="FAQ 4diac IDE" url="http://org.eclipse.ui.intro/showHelpTopic?id=/org.eclipse.fordiac.ide/html/faq/faq.html#topOfPage" id="orgfordiacide-webLink"  style-id="content-link">
+          	<text>Frequently Asked Questions on 4diac IDE.</text>
+       	</link>
+		<link label="FAQ 4diac FORTE" url="http://org.eclipse.ui.intro/showHelpTopic?id=/org.eclipse.fordiac.ide/html/faq/faq.html#faqFORTE" id="orgfordiacide-webLink"  style-id="content-link">
+          	<text>Frequently Asked Questions on 4diac FORTE.</text>
+       	</link>
+       	</group>
+  	</extensionContent>
+  	
+  	<extensionContent id="fordiac-overview-right" name="IEC-61499-Elements" path="overview/@">		
+		<group style-id="content-group" id="overview-topright-group1">
+       		<html id="features" src="./features.html" type="inline"/>
+       	</group>
+  	</extensionContent>
+</introContent>

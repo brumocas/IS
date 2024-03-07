@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Built-By: genie.emf
+Created-By: Apache Maven 3.6.0
+Build-Jdk: 1.8.0_192
+
+Name: epl-v10.html
+SHA1-Digest: jYDaDJLBJpthCwPMgGFVYASJjIU=
+
+Name: feature.xml
+SHA1-Digest: Sq1ES3H5FYQs6oIzgidh6cLLefc=
+
+Name: feature.properties
+SHA1-Digest: jPV0emtBbwETPsvArLlyZaZEH9U=
+
+Name: license.html
+SHA1-Digest: Z5WKoRSIDCgQNswUpOU/oSPE2a0=
+
