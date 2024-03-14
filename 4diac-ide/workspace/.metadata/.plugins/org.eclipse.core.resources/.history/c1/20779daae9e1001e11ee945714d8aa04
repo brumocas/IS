@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE System SYSTEM "http://www.holobloc.com/xml/LibraryElement.dtd">
+<System Comment="" Name="SINF_0">
+  <VersionInfo Author="eliseu" Date="2023-02-20" Version="1.0"/>
+  <Application Comment="" Name="SINF_0App">
+    <SubAppNetwork>
+      <FB Comment="" Name="MACHINE_SIMULATOR_1" Type="MACHINE_SIMULATOR" x="3764.705882352941" y="235.2941176470588">
+        <Parameter Name="PARAMS_DATA" Value="[((5, 1), (20, 0.0))]"/>
+        <Parameter Name="LIM_ANOM" Value="0.3"/>
+        <Parameter Name="PARAMS_MTBF" Value="(18, 2.5)"/>
+        <Parameter Name="PARAMS_MTTS" Value="(2, 1.5)"/>
+        <Parameter Name="PARAMS_MTTR" Value="(5, 1.5)"/>
+        <Parameter Name="DELAY" Value="1"/>
+      </FB>
+      <FB Comment="" Name="MACHINE_SIMULATOR_1_1" Type="MACHINE_SIMULATOR" x="3764.705882352941" y="2705.882352941176">
+        <Parameter Name="PARAMS_DATA" Value="[((29, 0.7), (30, 0.7))]"/>
+        <Parameter Name="LIM_ANOM" Value="0.3"/>
+        <Parameter Name="PARAMS_MTBF" Value="(25, 2.5)"/>
+        <Parameter Name="PARAMS_MTTS" Value="(5, 1.5)"/>
+        <Parameter Name="PARAMS_MTTR" Value="(9, 1.5)"/>
+        <Parameter Name="DELAY" Value="1"/>
+      </FB>
+      <FB Comment="" Name="PROD_MAN" Type="PROD_MAN" x="999.9999999999999" y="999.9999999999999"/>
+      <FB Comment="" Name="CONVEYOR_DS_TS" Type="CONVEYOR_DS_TS" x="5882.35294117647" y="588.2352941176471"/>
+      <EventConnections>
+        <Connection Comment="" Destination="MACHINE_SIMULATOR_1.ON-OFF" Source="PROD_MAN.ON-OFF_O" dx1="376.4705882352941"/>
+        <Connection Comment="" Destination="MACHINE_SIMULATOR_1_1.ON-OFF" Source="PROD_MAN.ON-OFF_O" dx1="376.4705882352941"/>
+        <Connection Comment="" Destination="CONVEYOR_DS_TS.RUN" Source="MACHINE_SIMULATOR_1.READ_O" dx1="764.7058823529411"/>
+      </EventConnections>
+      <DataConnections>
+        <Connection Comment="" Destination="CONVEYOR_DS_TS.DATA" Source="MACHINE_SIMULATOR_1.DATA" dx1="388.235294117647"/>
+      </DataConnections>
+    </SubAppNetwork>
+  </Application>
+  <Device Comment="" Name="FORTE_PC" Type="FORTE_PC" x="5247.058823529412" y="1999.9999999999998">
+    <Parameter Name="MGR_ID" Value="&quot;localhost:61499&quot;"/>
+    <Attribute Comment="device profile" Name="Profile" Type="STRING" Value="HOLOBLOC"/>
+    <Attribute Comment="color" Name="Color" Type="STRING" Value="102,239,165"/>
+    <Resource Comment="" Name="DIN1" Type="EMB_RES" x="0.0" y="0.0">
+      <FBNetwork>
+        <FB Comment="" Name="MACHINE_SIMULATOR_1" Type="MACHINE_SIMULATOR" x="1370.5882352941176" y="623.5294117647059">
+          <Parameter Name="PARAMS_DATA" Value="[((5, 1), (20, 0.0))]"/>
+          <Parameter Name="LIM_ANOM" Value="0.3"/>
+          <Parameter Name="PARAMS_MTBF" Value="(18, 2.5)"/>
+          <Parameter Name="PARAMS_MTTS" Value="(2, 1.5)"/>
+          <Parameter Name="PARAMS_MTTR" Value="(5, 1.5)"/>
+          <Parameter Name="DELAY" Value="1"/>
+        </FB>
+        <FB Comment="" Name="MACHINE_SIMULATOR_1_1" Type="MACHINE_SIMULATOR" x="3747.0588235294117" y="1870.5882352941176">
+          <Parameter Name="PARAMS_DATA" Value="[((29, 0.7), (30, 0.7))]"/>
+          <Parameter Name="LIM_ANOM" Value="0.3"/>
+          <Parameter Name="PARAMS_MTBF" Value="(25, 2.5)"/>
+          <Parameter Name="PARAMS_MTTS" Value="(5, 1.5)"/>
+          <Parameter Name="PARAMS_MTTR" Value="(9, 1.5)"/>
+          <Parameter Name="DELAY" Value="1"/>
+        </FB>
+        <FB Comment="" Name="PROD_MAN" Type="PROD_MAN" x="999.9999999999999" y="999.9999999999999"/>
+        <FB Comment="" Name="CONVEYOR_DS_TS" Type="CONVEYOR_DS_TS" x="6211.764705882352" y="952.9411764705882"/>
+        <EventConnections>
+          <Connection Comment="" Destination="MACHINE_SIMULATOR_1.ON-OFF" Source="PROD_MAN.ON-OFF_O"/>
+          <Connection Comment="" Destination="MACHINE_SIMULATOR_1_1.ON-OFF" Source="PROD_MAN.ON-OFF_O"/>
+          <Connection Comment="" Destination="CONVEYOR_DS_TS.RUN" Source="MACHINE_SIMULATOR_1.READ_O"/>
+        </EventConnections>
+        <DataConnections>
+          <Connection Comment="" Destination="CONVEYOR_DS_TS.DATA" Source="MACHINE_SIMULATOR_1.DATA"/>
+        </DataConnections>
+      </FBNetwork>
+    </Resource>
+  </Device>
+  <Mapping From="SINF_0App.MACHINE_SIMULATOR_1" To="FORTE_PC.DIN1.MACHINE_SIMULATOR_1"/>
+  <Mapping From="SINF_0App.MACHINE_SIMULATOR_1_1" To="FORTE_PC.DIN1.MACHINE_SIMULATOR_1_1"/>
+  <Mapping From="SINF_0App.PROD_MAN" To="FORTE_PC.DIN1.PROD_MAN"/>
+  <Mapping From="SINF_0App.CONVEYOR_DS_TS" To="FORTE_PC.DIN1.CONVEYOR_DS_TS"/>
+  <Segment Comment="" Name="Ethernet" Type="Ethernet" dx1="1870.5882352941176" x="4676.470588235294" y="1235.2941176470588">
+    <Attribute Comment="color" Name="Color" Type="STRING" Value="171,91,198"/>
+  </Segment>
+  <Link CommResource="FORTE_PC" Comment="" SegmentName="Ethernet"/>
+</System>

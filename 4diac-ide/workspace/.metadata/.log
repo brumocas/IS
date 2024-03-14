@@ -2340,3 +2340,198 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at java.base/java.net.Socket.connect(Socket.java:609)
 	at org.eclipse.fordiac.ide.deployment.iec61499.EthernetDeviceManagementCommunicationHandler.connect(EthernetDeviceManagementCommunicationHandler.java:64)
 	... 8 more
+
+!ENTRY org.eclipse.fordiac.ide.monitoring 4 0 2024-03-14 12:02:30.363
+!MESSAGE Could not add watch for STATION1_INFO.LUM
+!STACK 0
+org.eclipse.fordiac.ide.deployment.exceptions.DeploymentException: Could not add watch for "STATION1_INFO.LUM".
+	at org.eclipse.fordiac.ide.deployment.iec61499.DeploymentExecutor.addWatch(DeploymentExecutor.java:364)
+	at org.eclipse.fordiac.ide.monitoring.SystemMonitoringData.sendAddWatch(SystemMonitoringData.java:140)
+	at org.eclipse.fordiac.ide.monitoring.EnableSystemMonitoringRunnable.addWatches(EnableSystemMonitoringRunnable.java:76)
+	at org.eclipse.fordiac.ide.monitoring.EnableSystemMonitoringRunnable.run(EnableSystemMonitoringRunnable.java:46)
+	at org.eclipse.fordiac.ide.monitoring.SystemMonitoringData.enableSystemSynch(SystemMonitoringData.java:91)
+	at org.eclipse.fordiac.ide.monitoring.MonitoringManager.enableSystemSynch(MonitoringManager.java:155)
+	at org.eclipse.fordiac.ide.deployment.DownloadRunnable.reenableMonitoring(DownloadRunnable.java:306)
+	at org.eclipse.fordiac.ide.deployment.DownloadRunnable.run(DownloadRunnable.java:107)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base/java.io.DataInputStream.readByte(DataInputStream.java:270)
+	at org.eclipse.fordiac.ide.deployment.iec61499.EthernetDeviceManagementCommunicationHandler.handleResponse(EthernetDeviceManagementCommunicationHandler.java:90)
+	at org.eclipse.fordiac.ide.deployment.iec61499.EthernetDeviceManagementCommunicationHandler.sendREQ(EthernetDeviceManagementCommunicationHandler.java:118)
+	at org.eclipse.fordiac.ide.deployment.interactors.AbstractDeviceManagementInteractor.sendREQ(AbstractDeviceManagementInteractor.java:58)
+	at org.eclipse.fordiac.ide.deployment.iec61499.DeploymentExecutor.addWatch(DeploymentExecutor.java:359)
+	... 8 more
+
+!ENTRY org.eclipse.fordiac.ide.monitoring 4 0 2024-03-14 12:02:33.367
+!MESSAGE Could not add watch for STATION2_INFO.B
+!STACK 0
+org.eclipse.fordiac.ide.deployment.exceptions.DeploymentException: Could not add watch for "STATION2_INFO.B".
+	at org.eclipse.fordiac.ide.deployment.iec61499.DeploymentExecutor.addWatch(DeploymentExecutor.java:364)
+	at org.eclipse.fordiac.ide.monitoring.SystemMonitoringData.sendAddWatch(SystemMonitoringData.java:140)
+	at org.eclipse.fordiac.ide.monitoring.EnableSystemMonitoringRunnable.addWatches(EnableSystemMonitoringRunnable.java:76)
+	at org.eclipse.fordiac.ide.monitoring.EnableSystemMonitoringRunnable.run(EnableSystemMonitoringRunnable.java:46)
+	at org.eclipse.fordiac.ide.monitoring.SystemMonitoringData.enableSystemSynch(SystemMonitoringData.java:91)
+	at org.eclipse.fordiac.ide.monitoring.MonitoringManager.enableSystemSynch(MonitoringManager.java:155)
+	at org.eclipse.fordiac.ide.deployment.DownloadRunnable.reenableMonitoring(DownloadRunnable.java:306)
+	at org.eclipse.fordiac.ide.deployment.DownloadRunnable.run(DownloadRunnable.java:107)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base/java.io.DataInputStream.readByte(DataInputStream.java:270)
+	at org.eclipse.fordiac.ide.deployment.iec61499.EthernetDeviceManagementCommunicationHandler.handleResponse(EthernetDeviceManagementCommunicationHandler.java:90)
+	at org.eclipse.fordiac.ide.deployment.iec61499.EthernetDeviceManagementCommunicationHandler.sendREQ(EthernetDeviceManagementCommunicationHandler.java:118)
+	at org.eclipse.fordiac.ide.deployment.interactors.AbstractDeviceManagementInteractor.sendREQ(AbstractDeviceManagementInteractor.java:58)
+	at org.eclipse.fordiac.ide.deployment.iec61499.DeploymentExecutor.addWatch(DeploymentExecutor.java:359)
+	... 8 more
+
+!ENTRY org.eclipse.fordiac.ide.monitoring 4 0 2024-03-14 12:02:36.371
+!MESSAGE Could not add watch for STATION2_INFO.STATUS
+!STACK 0
+org.eclipse.fordiac.ide.deployment.exceptions.DeploymentException: Could not add watch for "STATION2_INFO.STATUS".
+	at org.eclipse.fordiac.ide.deployment.iec61499.DeploymentExecutor.addWatch(DeploymentExecutor.java:364)
+	at org.eclipse.fordiac.ide.monitoring.SystemMonitoringData.sendAddWatch(SystemMonitoringData.java:140)
+	at org.eclipse.fordiac.ide.monitoring.EnableSystemMonitoringRunnable.addWatches(EnableSystemMonitoringRunnable.java:76)
+	at org.eclipse.fordiac.ide.monitoring.EnableSystemMonitoringRunnable.run(EnableSystemMonitoringRunnable.java:46)
+	at org.eclipse.fordiac.ide.monitoring.SystemMonitoringData.enableSystemSynch(SystemMonitoringData.java:91)
+	at org.eclipse.fordiac.ide.monitoring.MonitoringManager.enableSystemSynch(MonitoringManager.java:155)
+	at org.eclipse.fordiac.ide.deployment.DownloadRunnable.reenableMonitoring(DownloadRunnable.java:306)
+	at org.eclipse.fordiac.ide.deployment.DownloadRunnable.run(DownloadRunnable.java:107)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base/java.io.DataInputStream.readByte(DataInputStream.java:270)
+	at org.eclipse.fordiac.ide.deployment.iec61499.EthernetDeviceManagementCommunicationHandler.handleResponse(EthernetDeviceManagementCommunicationHandler.java:90)
+	at org.eclipse.fordiac.ide.deployment.iec61499.EthernetDeviceManagementCommunicationHandler.sendREQ(EthernetDeviceManagementCommunicationHandler.java:118)
+	at org.eclipse.fordiac.ide.deployment.interactors.AbstractDeviceManagementInteractor.sendREQ(AbstractDeviceManagementInteractor.java:58)
+	at org.eclipse.fordiac.ide.deployment.iec61499.DeploymentExecutor.addWatch(DeploymentExecutor.java:359)
+	... 8 more
+
+!ENTRY org.eclipse.fordiac.ide.monitoring 4 0 2024-03-14 12:02:39.375
+!MESSAGE Could not add watch for PROD_MAN.ON-OFF
+!STACK 0
+org.eclipse.fordiac.ide.deployment.exceptions.DeploymentException: Could not add watch for "PROD_MAN.ON-OFF".
+	at org.eclipse.fordiac.ide.deployment.iec61499.DeploymentExecutor.addWatch(DeploymentExecutor.java:364)
+	at org.eclipse.fordiac.ide.monitoring.SystemMonitoringData.sendAddWatch(SystemMonitoringData.java:140)
+	at org.eclipse.fordiac.ide.monitoring.EnableSystemMonitoringRunnable.addWatches(EnableSystemMonitoringRunnable.java:76)
+	at org.eclipse.fordiac.ide.monitoring.EnableSystemMonitoringRunnable.run(EnableSystemMonitoringRunnable.java:46)
+	at org.eclipse.fordiac.ide.monitoring.SystemMonitoringData.enableSystemSynch(SystemMonitoringData.java:91)
+	at org.eclipse.fordiac.ide.monitoring.MonitoringManager.enableSystemSynch(MonitoringManager.java:155)
+	at org.eclipse.fordiac.ide.deployment.DownloadRunnable.reenableMonitoring(DownloadRunnable.java:306)
+	at org.eclipse.fordiac.ide.deployment.DownloadRunnable.run(DownloadRunnable.java:107)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base/java.io.DataInputStream.readByte(DataInputStream.java:270)
+	at org.eclipse.fordiac.ide.deployment.iec61499.EthernetDeviceManagementCommunicationHandler.handleResponse(EthernetDeviceManagementCommunicationHandler.java:90)
+	at org.eclipse.fordiac.ide.deployment.iec61499.EthernetDeviceManagementCommunicationHandler.sendREQ(EthernetDeviceManagementCommunicationHandler.java:118)
+	at org.eclipse.fordiac.ide.deployment.interactors.AbstractDeviceManagementInteractor.sendREQ(AbstractDeviceManagementInteractor.java:58)
+	at org.eclipse.fordiac.ide.deployment.iec61499.DeploymentExecutor.addWatch(DeploymentExecutor.java:359)
+	... 8 more
+!SESSION 2024-03-14 12:03:39.449 -----------------------------------------------
+eclipse.buildId=1.11.0
+java.version=11.0.22
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.fordiac.ide.ui 4 0 2024-03-14 12:03:42.714
+!MESSAGE Icon URL handler registered.
+!SESSION 2024-03-14 13:16:36.908 -----------------------------------------------
+eclipse.buildId=1.11.0
+java.version=11.0.22
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.fordiac.ide.ui 4 0 2024-03-14 13:16:40.414
+!MESSAGE Icon URL handler registered.
+
+!ENTRY org.eclipse.fordiac.ide.systemmanagement 4 0 2024-03-14 13:28:37.532
+!MESSAGE Monitoring: Cann  not connect to device FORTE_PC
+!STACK 0
+org.eclipse.fordiac.ide.deployment.exceptions.DeploymentException: Could not connect to device
+	at org.eclipse.fordiac.ide.deployment.iec61499.EthernetDeviceManagementCommunicationHandler.connect(EthernetDeviceManagementCommunicationHandler.java:69)
+	at org.eclipse.fordiac.ide.deployment.interactors.AbstractDeviceManagementInteractor.connect(AbstractDeviceManagementInteractor.java:43)
+	at org.eclipse.fordiac.ide.monitoring.EnableSystemMonitoringRunnable.connectToDevices(EnableSystemMonitoringRunnable.java:59)
+	at org.eclipse.fordiac.ide.monitoring.EnableSystemMonitoringRunnable.run(EnableSystemMonitoringRunnable.java:45)
+	at org.eclipse.fordiac.ide.monitoring.SystemMonitoringData.enableSystemSynch(SystemMonitoringData.java:91)
+	at org.eclipse.fordiac.ide.monitoring.MonitoringManager.enableSystemSynch(MonitoringManager.java:155)
+	at org.eclipse.fordiac.ide.deployment.DownloadRunnable.reenableMonitoring(DownloadRunnable.java:306)
+	at org.eclipse.fordiac.ide.deployment.DownloadRunnable.run(DownloadRunnable.java:107)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.eclipse.fordiac.ide.deployment.iec61499.EthernetDeviceManagementCommunicationHandler.connect(EthernetDeviceManagementCommunicationHandler.java:64)
+	... 8 more
+
+!ENTRY org.eclipse.fordiac.ide.systemmanagement 4 0 2024-03-14 13:42:53.471
+!MESSAGE Monitoring: Cann  not connect to device FORTE_PC
+!STACK 0
+org.eclipse.fordiac.ide.deployment.exceptions.DeploymentException: Could not connect to device
+	at org.eclipse.fordiac.ide.deployment.iec61499.EthernetDeviceManagementCommunicationHandler.connect(EthernetDeviceManagementCommunicationHandler.java:69)
+	at org.eclipse.fordiac.ide.deployment.interactors.AbstractDeviceManagementInteractor.connect(AbstractDeviceManagementInteractor.java:43)
+	at org.eclipse.fordiac.ide.monitoring.EnableSystemMonitoringRunnable.connectToDevices(EnableSystemMonitoringRunnable.java:59)
+	at org.eclipse.fordiac.ide.monitoring.EnableSystemMonitoringRunnable.run(EnableSystemMonitoringRunnable.java:45)
+	at org.eclipse.fordiac.ide.monitoring.SystemMonitoringData.enableSystemSynch(SystemMonitoringData.java:91)
+	at org.eclipse.fordiac.ide.monitoring.MonitoringManager.enableSystemSynch(MonitoringManager.java:155)
+	at org.eclipse.fordiac.ide.deployment.DownloadRunnable.reenableMonitoring(DownloadRunnable.java:306)
+	at org.eclipse.fordiac.ide.deployment.DownloadRunnable.run(DownloadRunnable.java:107)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.eclipse.fordiac.ide.deployment.iec61499.EthernetDeviceManagementCommunicationHandler.connect(EthernetDeviceManagementCommunicationHandler.java:64)
+	... 8 more
+
+!ENTRY org.eclipse.fordiac.ide.systemmanagement 4 0 2024-03-14 13:48:23.605
+!MESSAGE Monitoring: Cann  not connect to device FORTE_PC
+!STACK 0
+org.eclipse.fordiac.ide.deployment.exceptions.DeploymentException: Could not connect to device
+	at org.eclipse.fordiac.ide.deployment.iec61499.EthernetDeviceManagementCommunicationHandler.connect(EthernetDeviceManagementCommunicationHandler.java:69)
+	at org.eclipse.fordiac.ide.deployment.interactors.AbstractDeviceManagementInteractor.connect(AbstractDeviceManagementInteractor.java:43)
+	at org.eclipse.fordiac.ide.monitoring.EnableSystemMonitoringRunnable.connectToDevices(EnableSystemMonitoringRunnable.java:59)
+	at org.eclipse.fordiac.ide.monitoring.EnableSystemMonitoringRunnable.run(EnableSystemMonitoringRunnable.java:45)
+	at org.eclipse.fordiac.ide.monitoring.SystemMonitoringData.enableSystemSynch(SystemMonitoringData.java:91)
+	at org.eclipse.fordiac.ide.monitoring.MonitoringManager.enableSystemSynch(MonitoringManager.java:155)
+	at org.eclipse.fordiac.ide.deployment.DownloadRunnable.reenableMonitoring(DownloadRunnable.java:306)
+	at org.eclipse.fordiac.ide.deployment.DownloadRunnable.run(DownloadRunnable.java:107)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.eclipse.fordiac.ide.deployment.iec61499.EthernetDeviceManagementCommunicationHandler.connect(EthernetDeviceManagementCommunicationHandler.java:64)
+	... 8 more
