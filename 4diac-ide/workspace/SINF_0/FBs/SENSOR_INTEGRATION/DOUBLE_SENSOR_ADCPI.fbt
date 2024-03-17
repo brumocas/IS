@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE FBType SYSTEM "http://www.holobloc.com/xml/LibraryElement.dtd">
+<FBType Name="DOUBLE_SENSOR_ADCPI" OpcUa="DEVICE.SENSOR">
+    <InterfaceList>
+        <EventInputs>
+            <Event Name="INIT" Type="Event"/>
+            <Event Name="READ" Type="Event">
+                <With Var="FIRST_PIN"/>
+                <With Var="SECOND_PIN"/>
+                <With Var="SAMPLES"/>
+            </Event>
+        </EventInputs>
+        <EventOutputs>
+            <Event Name="INIT_O" Type="Event"/>
+            <Event Name="READ_O" Type="Event">
+                <With Var="FIRST_SENSOR_MEASUREMENTS"/>
+                <With Var="SECOND_SENSOR_MEASUREMENTS"/>
+                <With Var="TIMESTAMPS"/>  
+            </Event>
+        </EventOutputs>
+        <InputVars>
+            <VarDeclaration Name="FIRST_PIN" Type="INT" OpcUa="Variable"/>
+            <VarDeclaration Name="SECOND_PIN" Type="INT" OpcUa="Variable"/>
+            <VarDeclaration Name="SAMPLES" Type="INT" OpcUa="Variable"/>
+        </InputVars>
+        <OutputVars>
+            <VarDeclaration Name="FIRST_SENSOR_MEASUREMENTS" Type="STRING" OpcUa="Variable"/>
+            <VarDeclaration Name="SECOND_SENSOR_MEASUREMENTS" Type="STRING" OpcUa="Variable"/>
+            <VarDeclaration Name="TIMESTAMPS" Type="STRING" OpcUa="Variable"/>
+        </OutputVars>
+    </InterfaceList>
+</FBType>

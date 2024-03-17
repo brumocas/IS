@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE FBType SYSTEM "http://www.holobloc.com/xml/LibraryElement.dtd">
+<FBType Name="SENSOR_UBI_MQTT" OpcUa="SERVICE">
+  <InterfaceList>
+    <EventInputs>
+      <Event Name="INIT" Type="Event"/>
+      <Event Name="RUN" Type="Event">
+		<With Var="UA_NAME"/>
+		<With Var="TOPIC"/>
+		<With Var="RATE"/>
+		<With Var="CLIENT"/>
+		<With Var="MESSAGES"/>
+	  </Event>
+    </EventInputs>
+    <EventOutputs>
+      <Event Name="INIT_O" Type="Event"/>
+      <Event Name="RUN_O" Type="Event">
+        <With Var="VALUE"/>
+      </Event>
+    </EventOutputs>
+    <InputVars>
+      <VarDeclaration Name="UA_NAME" Type="STRING" OpcUa="Constant"/>
+      <VarDeclaration Name="TOPIC" Type="STRING" OpcUa="Constant"/>
+      <VarDeclaration Name="RATE" Type="STRING" OpcUa="Constant"/>
+	  <VarDeclaration Name="CLIENT" Type="STRING" OpcUa="Variable"/>
+      <VarDeclaration Name="MESSAGES" Type="STRING" OpcUa="Variable"/>
+    </InputVars>
+    <OutputVars>
+      <VarDeclaration Name="VALUE" Type="STRING" OpcUa="Variable"/>
+    </OutputVars>
+  </InterfaceList>
+</FBType>

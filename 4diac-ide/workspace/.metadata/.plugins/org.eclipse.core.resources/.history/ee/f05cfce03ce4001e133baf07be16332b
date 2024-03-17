@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE System SYSTEM "http://www.holobloc.com/xml/LibraryElement.dtd">
+<System Comment="" Name="SINF_0">
+  <Identification/>
+  <VersionInfo Author="eliseu" Date="2023-02-20" Version="1.0"/>
+  <Application Comment="" Name="SINF_0App">
+    <SubAppNetwork>
+      <FB Comment="" Name="PROD_MAN" Type="PROD_MAN" x="-470.5882352941176" y="3529.411764705882"/>
+      <FB Comment="" Name="STATION1" Type="STATION1" x="4235.294117647059" y="352.94117647058823">
+        <Parameter Name="PARAMS_DATA" Value="[((20, 0.01), (30, 1)), ((50, 0.01), (90, 1)), ((1000, 1), (1500, 10)), ((400, 10), (200, 1)), ((1, 0), (0, 0))]"/>
+        <Parameter Name="LIM_ANOM" Value="0.3"/>
+        <Parameter Name="PARAMS_MTBF" Value="(18, 2.5)"/>
+        <Parameter Name="PARAMS_MTTS" Value="(2, 1.5)"/>
+        <Parameter Name="PARAMS_MTTR" Value="(5, 1.5)"/>
+        <Parameter Name="DELAY" Value="1"/>
+      </FB>
+      <FB Comment="" Name="STATION1_INFO" Type="STATION1_INFO" x="7058.823529411764" y="352.94117647058823"/>
+      <FB Comment="" Name="STATION2" Type="STATION2" x="4235.294117647059" y="1999.9999999999998">
+        <Parameter Name="PARAMS_DATA" Value="[((20, 0.01), (30, 1)), ((50, 0.01), (90, 1)), ((1200, 1), (2000, 10)),  ((400, 10), (200, 1)), ((1, 0), (0, 0)), ((50, 0.1), (100, 0.1)),((100, 10), (100, 10)),((100, 10), (100, 10)),((100, 10), (100,10))]"/>
+        <Parameter Name="LIM_ANOM" Value="0.3"/>
+        <Parameter Name="PARAMS_MTBF" Value="(18, 2.5)"/>
+        <Parameter Name="PARAMS_MTTS" Value="(2, 1.5)"/>
+        <Parameter Name="PARAMS_MTTR" Value="(5, 1.5)"/>
+        <Parameter Name="DELAY" Value="1"/>
+      </FB>
+      <FB Comment="" Name="STATION2_INFO" Type="STATION2_INFO" x="7058.823529411764" y="1999.9999999999998"/>
+      <FB Comment="" Name="WOOD_DECODER" Type="WOOD_DECODER" x="8823.529411764704" y="2705.882352941176"/>
+      <FB Comment="" Name="STATION4" Type="STATION4" x="4235.294117647059" y="6352.941176470587">
+        <Parameter Name="PARAMS_DATA" Value="[((20, 0.01), (30, 1)), ((50, 0.01), (90, 1)), ((1500, 1), (2000, 10)), ((400, 10), (200, 1)), ((1, 0), (0, 0))]"/>
+        <Parameter Name="LIM_ANOM" Value="0.3"/>
+        <Parameter Name="PARAMS_MTBF" Value="(18, 2.5)"/>
+        <Parameter Name="PARAMS_MTTS" Value="(2, 1.5)"/>
+        <Parameter Name="PARAMS_MTTR" Value="(5, 1.5)"/>
+        <Parameter Name="DELAY" Value="0.33"/>
+      </FB>
+      <FB Comment="" Name="STATION4_INFO" Type="STATION4_INFO" x="7058.823529411764" y="6352.941176470587"/>
+      <FB Comment="" Name="STATION3" Type="STATION3" x="4235.294117647059" y="4352.941176470588">
+        <Parameter Name="PARAMS_DATA" Value="[((20, 0.01), (30, 1)), ((50, 0.01), (90, 1)), ((1000, 1), (1500, 10)), ((400, 10), (200, 1)), ((1, 0), (0, 0))]"/>
+        <Parameter Name="LIM_ANOM" Value="0.3"/>
+        <Parameter Name="PARAMS_MTBF" Value="(18, 2.5)"/>
+        <Parameter Name="PARAMS_MTTS" Value="(2, 1.5)"/>
+        <Parameter Name="PARAMS_MTTR" Value="(5, 1.5)"/>
+        <Parameter Name="DELAY" Value="1"/>
+      </FB>
+      <EventConnections>
+        <Connection Comment="" Destination="STATION1_INFO.RUN" Source="STATION1.READ_O"/>
+        <Connection Comment="" Destination="STATION2.ON-OFF" Source="PROD_MAN.ON-OFF_O" dx1="352.94117647058823"/>
+        <Connection Comment="" Destination="STATION1.ON-OFF" Source="PROD_MAN.ON-OFF_O" dx1="358.8235294117647"/>
+        <Connection Comment="" Destination="STATION2_INFO.RUN" Source="STATION2.READ_O"/>
+        <Connection Comment="" Destination="WOOD_DECODER.RUN" Source="STATION2_INFO.RUN_O" dx1="623.5294117647059"/>
+        <Connection Comment="" Destination="STATION4.ON-OFF" Source="PROD_MAN.ON-OFF_O" dx1="341.17647058823525"/>
+        <Connection Comment="" Destination="STATION4_INFO.RUN" Source="STATION4.READ_O"/>
+        <Connection Comment="" Destination="STATION3.ON-OFF" Source="PROD_MAN.ON-OFF_O" dx1="1970.5882352941176"/>
+      </EventConnections>
+      <DataConnections>
+        <Connection Comment="" Destination="STATION1_INFO.DATA" Source="STATION1.DATA" dx1="447.0588235294117"/>
+        <Connection Comment="" Destination="STATION2_INFO.DATA" Source="STATION2.DATA" dx1="982.3529411764705"/>
+        <Connection Comment="" Destination="WOOD_DECODER.R" Source="STATION2_INFO.R"/>
+        <Connection Comment="" Destination="WOOD_DECODER.G" Source="STATION2_INFO.G" dx1="511.7647058823529"/>
+        <Connection Comment="" Destination="WOOD_DECODER.B" Source="STATION2_INFO.B"/>
+        <Connection Comment="" Destination="STATION4_INFO.DATA" Source="STATION4.DATA" dx1="982.3529411764705"/>
+      </DataConnections>
+    </SubAppNetwork>
+  </Application>
+  <Device Comment="" Name="FORTE_PC" Type="FORTE_PC" x="5247.058823529412" y="1999.9999999999998">
+    <Parameter Name="MGR_ID" Value="&quot;localhost:61499&quot;"/>
+    <Attribute Comment="device profile" Name="Profile" Type="STRING" Value="HOLOBLOC"/>
+    <Attribute Comment="color" Name="Color" Type="STRING" Value="102,239,165"/>
+    <Resource Comment="" Name="DIN1" Type="EMB_RES" x="0.0" y="0.0">
+      <FBNetwork>
+        <FB Comment="" Name="PROD_MAN" Type="PROD_MAN" x="999.9999999999999" y="999.9999999999999"/>
+        <FB Comment="" Name="STATION1" Type="STATION1" x="5882.35294117647" y="1882.3529411764705">
+          <Parameter Name="PARAMS_DATA" Value="[((20, 0.01), (30, 1)), ((50, 0.01), (90, 1)), ((1000, 1), (1500, 10)), ((400, 10), (200, 1)), ((1, 0), (0, 0))]"/>
+          <Parameter Name="LIM_ANOM" Value="0.3"/>
+          <Parameter Name="PARAMS_MTBF" Value="(18, 2.5)"/>
+          <Parameter Name="PARAMS_MTTS" Value="(2, 1.5)"/>
+          <Parameter Name="PARAMS_MTTR" Value="(5, 1.5)"/>
+          <Parameter Name="DELAY" Value="1"/>
+        </FB>
+        <FB Comment="" Name="STATION1_INFO" Type="STATION1_INFO" x="5411.764705882352" y="2117.6470588235293"/>
+        <FB Comment="" Name="STATION2" Type="STATION2" x="3529.411764705882" y="1999.9999999999998">
+          <Parameter Name="PARAMS_DATA" Value="[((20, 0.01), (30, 1)), ((50, 0.01), (90, 1)), ((1200, 1), (2000, 10)),  ((400, 10), (200, 1)), ((1, 0), (0, 0)), ((50, 0.1), (100, 0.1)),((100, 10), (100, 10)),((100, 10), (100, 10)),((100, 10), (100,10))]"/>
+          <Parameter Name="LIM_ANOM" Value="0.3"/>
+          <Parameter Name="PARAMS_MTBF" Value="(18, 2.5)"/>
+          <Parameter Name="PARAMS_MTTS" Value="(2, 1.5)"/>
+          <Parameter Name="PARAMS_MTTR" Value="(5, 1.5)"/>
+          <Parameter Name="DELAY" Value="1"/>
+        </FB>
+        <FB Comment="" Name="STATION2_INFO" Type="STATION2_INFO" x="6352.941176470587" y="2117.6470588235293"/>
+        <FB Comment="" Name="WOOD_DECODER" Type="WOOD_DECODER" x="7999.999999999999" y="2823.529411764706"/>
+        <FB Comment="" Name="STATION4" Type="STATION4" x="4082.3529411764703" y="4847.058823529412">
+          <Parameter Name="PARAMS_DATA" Value="[((20, 0.01), (30, 1)), ((50, 0.01), (90, 1)), ((1500, 1), (2000, 10)), ((400, 10), (200, 1)), ((1, 0), (0, 0))]"/>
+          <Parameter Name="LIM_ANOM" Value="0.3"/>
+          <Parameter Name="PARAMS_MTBF" Value="(18, 2.5)"/>
+          <Parameter Name="PARAMS_MTTS" Value="(2, 1.5)"/>
+          <Parameter Name="PARAMS_MTTR" Value="(5, 1.5)"/>
+          <Parameter Name="DELAY" Value="0.33"/>
+        </FB>
+        <FB Comment="" Name="STATION4_INFO" Type="STATION4_INFO" x="7058.823529411764" y="5882.35294117647"/>
+        <FB Comment="" Name="STATION3" Type="STATION3" x="4235.294117647059" y="4352.941176470588">
+          <Parameter Name="PARAMS_DATA" Value="[((20, 0.01), (30, 1)), ((50, 0.01), (90, 1)), ((1000, 1), (1500, 10)), ((400, 10), (200, 1)), ((1, 0), (0, 0))]"/>
+          <Parameter Name="LIM_ANOM" Value="0.3"/>
+          <Parameter Name="PARAMS_MTBF" Value="(18, 2.5)"/>
+          <Parameter Name="PARAMS_MTTS" Value="(2, 1.5)"/>
+          <Parameter Name="PARAMS_MTTR" Value="(5, 1.5)"/>
+          <Parameter Name="DELAY" Value="1"/>
+        </FB>
+        <EventConnections>
+          <Connection Comment="" Destination="STATION1_INFO.RUN" Source="STATION1.READ_O"/>
+          <Connection Comment="" Destination="STATION2.ON-OFF" Source="PROD_MAN.ON-OFF_O"/>
+          <Connection Comment="" Destination="STATION1.ON-OFF" Source="PROD_MAN.ON-OFF_O"/>
+          <Connection Comment="" Destination="STATION2_INFO.RUN" Source="STATION2.READ_O"/>
+          <Connection Comment="" Destination="WOOD_DECODER.RUN" Source="STATION2_INFO.RUN_O"/>
+          <Connection Comment="" Destination="STATION4.ON-OFF" Source="PROD_MAN.ON-OFF_O"/>
+          <Connection Comment="" Destination="STATION4_INFO.RUN" Source="STATION4.READ_O"/>
+          <Connection Comment="" Destination="STATION3.ON-OFF" Source="PROD_MAN.ON-OFF_O"/>
+        </EventConnections>
+        <DataConnections>
+          <Connection Comment="" Destination="STATION1_INFO.DATA" Source="STATION1.DATA"/>
+          <Connection Comment="" Destination="STATION2_INFO.DATA" Source="STATION2.DATA"/>
+          <Connection Comment="" Destination="WOOD_DECODER.R" Source="STATION2_INFO.R"/>
+          <Connection Comment="" Destination="WOOD_DECODER.G" Source="STATION2_INFO.G"/>
+          <Connection Comment="" Destination="WOOD_DECODER.B" Source="STATION2_INFO.B"/>
+          <Connection Comment="" Destination="STATION4_INFO.DATA" Source="STATION4.DATA"/>
+        </DataConnections>
+      </FBNetwork>
+    </Resource>
+  </Device>
+  <Mapping From="SINF_0App.PROD_MAN" To="FORTE_PC.DIN1.PROD_MAN"/>
+  <Mapping From="SINF_0App.STATION1" To="FORTE_PC.DIN1.STATION1"/>
+  <Mapping From="SINF_0App.STATION1_INFO" To="FORTE_PC.DIN1.STATION1_INFO"/>
+  <Mapping From="SINF_0App.STATION2" To="FORTE_PC.DIN1.STATION2"/>
+  <Mapping From="SINF_0App.STATION2_INFO" To="FORTE_PC.DIN1.STATION2_INFO"/>
+  <Mapping From="SINF_0App.WOOD_DECODER" To="FORTE_PC.DIN1.WOOD_DECODER"/>
+  <Mapping From="SINF_0App.STATION4" To="FORTE_PC.DIN1.STATION4"/>
+  <Mapping From="SINF_0App.STATION4_INFO" To="FORTE_PC.DIN1.STATION4_INFO"/>
+  <Mapping From="SINF_0App.STATION3" To="FORTE_PC.DIN1.STATION3"/>
+  <Segment Comment="" Name="Ethernet" Type="Ethernet" dx1="1870.5882352941176" x="4676.470588235294" y="1235.2941176470588">
+    <Attribute Comment="color" Name="Color" Type="STRING" Value="171,91,198"/>
+  </Segment>
+  <Link CommResource="FORTE_PC" Comment="" SegmentName="Ethernet"/>
+</System>
