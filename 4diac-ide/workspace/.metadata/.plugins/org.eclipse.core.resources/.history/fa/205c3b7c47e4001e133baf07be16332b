@@ -14,8 +14,8 @@
         <Parameter Name="PARAMS_MTTR" Value="(5, 1.5)"/>
         <Parameter Name="DELAY" Value="1"/>
       </FB>
-      <FB Comment="" Name="STATION1_INFO" Type="STATION1_INFO" x="6117.647058823529" y="352.94117647058823"/>
-      <FB Comment="" Name="STATION2" Type="STATION2" x="4235.294117647059" y="1764.705882352941">
+      <FB Comment="" Name="STATION1_INFO" Type="STATION1_INFO" x="6117.647058823529" y="470.5882352941176"/>
+      <FB Comment="" Name="STATION2" Type="STATION2" x="4235.294117647059" y="1999.9999999999998">
         <Parameter Name="PARAMS_DATA" Value="[((20, 0.01), (30, 1)), ((50, 0.01), (90, 1)), ((1200, 1), (2000, 10)),  ((400, 10), (200, 1)), ((1, 0), (0, 0)), ((50, 0.1), (100, 0.1)),((100, 10), (100, 10)),((100, 10), (100, 10)),((100, 10), (100,10))]"/>
         <Parameter Name="LIM_ANOM" Value="0.3"/>
         <Parameter Name="PARAMS_MTBF" Value="(18, 2.5)"/>
@@ -23,9 +23,9 @@
         <Parameter Name="PARAMS_MTTR" Value="(5, 1.5)"/>
         <Parameter Name="DELAY" Value="1"/>
       </FB>
-      <FB Comment="" Name="STATION2_INFO" Type="STATION2_INFO" x="6117.647058823529" y="1764.705882352941"/>
-      <FB Comment="" Name="WOOD_DECODER" Type="WOOD_DECODER" x="7999.999999999999" y="2470.5882352941176"/>
-      <FB Comment="" Name="STATION4" Type="STATION4" x="4235.294117647059" y="5411.764705882352">
+      <FB Comment="" Name="STATION2_INFO" Type="STATION2_INFO" x="6117.647058823529" y="1999.9999999999998"/>
+      <FB Comment="" Name="WOOD_DECODER" Type="WOOD_DECODER" x="7882.35294117647" y="2705.882352941176"/>
+      <FB Comment="" Name="STATION4" Type="STATION4" x="4235.294117647059" y="6352.941176470587">
         <Parameter Name="PARAMS_DATA" Value="[((20, 0.01), (30, 1)), ((50, 0.01), (90, 1)), ((1500, 1), (2000, 10)), ((400, 10), (200, 1)), ((1, 0), (0, 0))]"/>
         <Parameter Name="LIM_ANOM" Value="0.3"/>
         <Parameter Name="PARAMS_MTBF" Value="(18, 2.5)"/>
@@ -33,8 +33,8 @@
         <Parameter Name="PARAMS_MTTR" Value="(5, 1.5)"/>
         <Parameter Name="DELAY" Value="0.33"/>
       </FB>
-      <FB Comment="" Name="STATION4_INFO" Type="STATION4_INFO" x="6117.647058823529" y="5411.764705882352"/>
-      <FB Comment="" Name="STATION3" Type="STATION3" x="4235.294117647059" y="3529.411764705882">
+      <FB Comment="" Name="STATION4_INFO" Type="STATION4_INFO" x="6117.647058823529" y="6470.588235294117"/>
+      <FB Comment="" Name="STATION3" Type="STATION3" x="4235.294117647059" y="4117.647058823529">
         <Parameter Name="PARAMS_DATA" Value="[((20, 0.01), (30, 1)), ((50, 0.01), (90, 1)), ((2000, 1), (3500, 10)), ((400, 10), (200, 1)), ((1, 0), (0, 0)), ((95, 0.01), (40, 3)), ((10, 0.01), (20, 1)), ((35, 0.1), (50, 1)), ((90, 0.1), (20, 1)), ((350, 10), (200, 10))]"/>
         <Parameter Name="LIM_ANOM" Value="0.3"/>
         <Parameter Name="PARAMS_MTBF" Value="(18, 2.5)"/>
@@ -42,8 +42,8 @@
         <Parameter Name="PARAMS_MTTR" Value="(5, 1.5)"/>
         <Parameter Name="DELAY" Value="1"/>
       </FB>
-      <FB Comment="" Name="STATION3_INFO" Type="STATION3_INFO" x="6117.647058823529" y="3529.411764705882"/>
-      <FB Comment="" Name="STATION5" Type="STATION2" x="4235.294117647059" y="6823.529411764705">
+      <FB Comment="" Name="STATION3_INFO" Type="STATION3_INFO" x="6117.647058823529" y="4117.647058823529"/>
+      <FB Comment="" Name="STATION5" Type="STATION2" x="4235.294117647059" y="8352.941176470587">
         <Parameter Name="PARAMS_DATA" Value="[((20, 0.01), (30, 1)), ((50, 0.01), (90, 1)), ((1200, 1), (2000, 10)),  ((400, 10), (200, 1)), ((1, 0), (0, 0)), ((100, 10), (100, 10)),((100, 10), (100, 10)),((100, 10), (100,10))]"/>
         <Parameter Name="LIM_ANOM" Value="0.3"/>
         <Parameter Name="PARAMS_MTBF" Value="(18, 2.5)"/>
@@ -51,21 +51,21 @@
         <Parameter Name="PARAMS_MTTR" Value="(5, 1.5)"/>
         <Parameter Name="DELAY" Value="1"/>
       </FB>
-      <FB Comment="" Name="STATION5_INFO" Type="STATION5_INFO" x="6117.647058823529" y="6941.176470588235"/>
-      <FB Comment="" Name="WOOD_DECODER_1" Type="WOOD_DECODER" x="7882.35294117647" y="7529.411764705882"/>
-      <FB Comment="" Name="WOOD_COUNTER" Type="WOOD_COUNTER" x="9647.05882352941" y="7529.411764705882"/>
+      <FB Comment="" Name="STATION5_INFO" Type="STATION5_INFO" x="6117.647058823529" y="8352.941176470587"/>
+      <FB Comment="" Name="WOOD_DECODER_1" Type="WOOD_DECODER" x="7882.35294117647" y="8941.176470588234"/>
+      <FB Comment="" Name="WOOD_COUNTER" Type="WOOD_COUNTER" x="9647.05882352941" y="8941.176470588234"/>
       <EventConnections>
-        <Connection Comment="" Destination="STATION1_INFO.RUN" Source="STATION1.READ_O"/>
+        <Connection Comment="" Destination="STATION1_INFO.RUN" Source="STATION1.READ_O" dx1="452.9411764705882"/>
         <Connection Comment="" Destination="STATION2.ON-OFF" Source="PROD_MAN.ON-OFF_O" dx1="352.94117647058823"/>
         <Connection Comment="" Destination="STATION1.ON-OFF" Source="PROD_MAN.ON-OFF_O" dx1="358.8235294117647"/>
         <Connection Comment="" Destination="STATION2_INFO.RUN" Source="STATION2.READ_O"/>
         <Connection Comment="" Destination="WOOD_DECODER.RUN" Source="STATION2_INFO.RUN_O" dx1="600.0"/>
         <Connection Comment="" Destination="STATION4.ON-OFF" Source="PROD_MAN.ON-OFF_O" dx1="335.2941176470588"/>
-        <Connection Comment="" Destination="STATION4_INFO.RUN" Source="STATION4.READ_O"/>
+        <Connection Comment="" Destination="STATION4_INFO.RUN" Source="STATION4.READ_O" dx1="452.9411764705882"/>
         <Connection Comment="" Destination="STATION3.ON-OFF" Source="PROD_MAN.ON-OFF_O" dx1="329.4117647058823"/>
         <Connection Comment="" Destination="STATION3_INFO.RUN" Source="STATION3.READ_O"/>
         <Connection Comment="" Destination="STATION5.ON-OFF" Source="PROD_MAN.ON-OFF_O" dx1="305.88235294117646"/>
-        <Connection Comment="" Destination="STATION5_INFO.RUN" Source="STATION5.READ_O" dx1="511.7647058823529"/>
+        <Connection Comment="" Destination="STATION5_INFO.RUN" Source="STATION5.READ_O"/>
         <Connection Comment="" Destination="WOOD_DECODER_1.RUN" Source="STATION5_INFO.RUN_O" dx1="688.235294117647"/>
         <Connection Comment="" Destination="WOOD_COUNTER.RUN" Source="WOOD_DECODER_1.RUN_O"/>
       </EventConnections>
@@ -73,7 +73,7 @@
         <Connection Comment="" Destination="STATION1_INFO.DATA" Source="STATION1.DATA" dx1="447.0588235294117"/>
         <Connection Comment="" Destination="STATION2_INFO.DATA" Source="STATION2.DATA" dx1="835.2941176470588"/>
         <Connection Comment="" Destination="WOOD_DECODER.R" Source="STATION2_INFO.R"/>
-        <Connection Comment="" Destination="WOOD_DECODER.G" Source="STATION2_INFO.G" dx1="570.5882352941176"/>
+        <Connection Comment="" Destination="WOOD_DECODER.G" Source="STATION2_INFO.G" dx1="511.7647058823529"/>
         <Connection Comment="" Destination="WOOD_DECODER.B" Source="STATION2_INFO.B"/>
         <Connection Comment="" Destination="STATION4_INFO.DATA" Source="STATION4.DATA" dx1="835.2941176470588"/>
         <Connection Comment="" Destination="STATION3_INFO.DATA" Source="STATION3.DATA" dx1="947.0588235294117"/>
