@@ -17,11 +17,11 @@
                 <With Var="P"/>
                 <With Var="LUM"/>
                 <With Var="COUNT"/>
-                <With Var="H_Washing"/>
-                <With Var="F_drilling"/>
-                <With Var="T_drying"/>
-                <With Var="Gas_varnish"/>
-                <With Var="LUM_curing"/>
+                <With Var="H_WASHING"/>
+                <With Var="F_DRILLING"/>
+                <With Var="T_DRYING"/>
+                <With Var="GAS_VARNISH"/>
+                <With Var="LUM_CURING"/>
             </Event>
         </EventOutputs>
         <InputVars>
@@ -34,11 +34,11 @@
             <VarDeclaration Name="P" Type="STRING"/>
             <VarDeclaration Name="LUM" Type="STRING"/>
             <VarDeclaration Name="COUNT" Type="STRING"/>
-            <VarDeclaration Name="H_Washing" Type="STRING"/>
-            <VarDeclaration Name="F_drilling" Type="STRING"/>
-            <VarDeclaration Name="T_drying" Type="STRING"/>
-            <VarDeclaration Name="Gas_varnish" Type="STRING"/>
-            <VarDeclaration Name="LUM_curing" Type="STRING"/>
+            <VarDeclaration Name="H_WASHING" Type="STRING"/>
+            <VarDeclaration Name="F_DRILLING" Type="STRING"/>
+            <VarDeclaration Name="T_DRYING" Type="STRING"/>
+            <VarDeclaration Name="GAS_VARNISH" Type="STRING"/>
+            <VarDeclaration Name="LUM_CURING" Type="STRING"/>
         </OutputVars>
     </InterfaceList>
 </FBType>
