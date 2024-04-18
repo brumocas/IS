@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config date="1570471980740" transient="false">
+	<site updateable="true" url="platform:/base/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="org.eclipse.xtend.sdk" version="2.19.0.v20190902-1322" url="features/org.eclipse.xtend.sdk_2.19.0.v20190902-1322/" plugin-identifier="org.eclipse.xtend.ide">
+		</feature>
+		<feature id="org.eclipse.emf.mapping.ecore.editor" version="2.14.0.v20190528-0725" url="features/org.eclipse.emf.mapping.ecore.editor_2.14.0.v20190528-0725/">
+		</feature>
+		<feature id="org.eclipse.ecf.core.ssl.feature" version="1.1.200.v20190502-0212" url="features/org.eclipse.ecf.core.ssl.feature_1.1.200.v20190502-0212/">
+		</feature>
+		<feature id="org.eclipse.xtext.ui" version="2.19.0.v20190902-1322" url="features/org.eclipse.xtext.ui_2.19.0.v20190902-1322/">
+		</feature>
+		<feature id="org.eclipse.help" version="2.2.700.v20190916-1045" url="features/org.eclipse.help_2.2.700.v20190916-1045/" plugin-identifier="org.eclipse.help.base">
+		</feature>
+		<feature id="org.eclipse.emf.edit.ui" version="2.17.0.v20190323-1059" url="features/org.eclipse.emf.edit.ui_2.17.0.v20190323-1059/">
+		</feature>
+		<feature id="org.eclipse.emf.mwe2.launcher.source" version="2.11.0.201906111547" url="features/org.eclipse.emf.mwe2.launcher.source_2.11.0.201906111547/">
+		</feature>
+		<feature id="org.eclipse.ecf.core.feature" version="1.5.3.v20190423-0625" url="features/org.eclipse.ecf.core.feature_1.5.3.v20190423-0625/">
+		</feature>
+		<feature id="org.eclipse.fordiac.ide.runtime.feature" version="1.11.0.201910071807" url="features/org.eclipse.fordiac.ide.runtime.feature_1.11.0.201910071807/">
+		</feature>
+		<feature id="org.eclipse.fordiac.ide.export.feature" version="1.11.0.201910071807" url="features/org.eclipse.fordiac.ide.export.feature_1.11.0.201910071807/">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.user.ui" version="2.4.500.v20190903-0934" url="features/org.eclipse.equinox.p2.user.ui_2.4.500.v20190903-0934/">
+		</feature>
+		<feature id="org.eclipse.xtext.runtime" version="2.19.0.v20190902-1322" url="features/org.eclipse.xtext.runtime_2.19.0.v20190902-1322/">
+		</feature>
+		<feature id="org.eclipse.platform" version="4.13.0.v20190916-1323" url="features/org.eclipse.platform_4.13.0.v20190916-1323/">
+		</feature>
+		<feature id="org.eclipse.jdt" version="3.18.100.v20190916-1045" url="features/org.eclipse.jdt_3.18.100.v20190916-1045/">
+		</feature>
+		<feature id="org.eclipse.xtext.xbase" version="2.19.0.v20190902-1322" url="features/org.eclipse.xtext.xbase_2.19.0.v20190902-1322/">
+		</feature>
+		<feature id="org.eclipse.xtext.redist" version="2.19.0.v20190902-1322" url="features/org.eclipse.xtext.redist_2.19.0.v20190902-1322/">
+		</feature>
+		<feature id="org.eclipse.fordiac.ide.systemimport.feature" version="1.11.0.201910071807" url="features/org.eclipse.fordiac.ide.systemimport.feature_1.11.0.201910071807/">
+		</feature>
+		<feature id="org.eclipse.ecf.filetransfer.httpclient45.feature" version="1.0.0.v20190530-1947" url="features/org.eclipse.ecf.filetransfer.httpclient45.feature_1.0.0.v20190530-1947/">
+		</feature>
+		<feature id="org.eclipse.emf.mwe2.launcher" version="2.11.0.201906111547" url="features/org.eclipse.emf.mwe2.launcher_2.11.0.201906111547/">
+		</feature>
+		<feature id="org.eclipse.emf.ecore.edit" version="2.14.0.v20190822-1451" url="features/org.eclipse.emf.ecore.edit_2.14.0.v20190822-1451/">
+		</feature>
+		<feature id="org.eclipse.ecf.filetransfer.feature" version="3.14.5.v20190423-0614" url="features/org.eclipse.ecf.filetransfer.feature_3.14.5.v20190423-0614/">
+		</feature>
+		<feature id="org.eclipse.draw2d" version="3.10.100.201606061308" url="features/org.eclipse.draw2d_3.10.100.201606061308/">
+		</feature>
+		<feature id="org.eclipse.e4.rcp" version="1.6.600.v20190907-0426" url="features/org.eclipse.e4.rcp_1.6.600.v20190907-0426/">
+		</feature>
+		<feature id="org.eclipse.emf.mwe2.runtime.sdk" version="2.11.0.201906111547" url="features/org.eclipse.emf.mwe2.runtime.sdk_2.11.0.201906111547/">
+		</feature>
+		<feature id="org.eclipse.fordiac.ide.comgeneration.feature" version="1.11.0.201910071807" url="features/org.eclipse.fordiac.ide.comgeneration.feature_1.11.0.201910071807/">
+		</feature>
+		<feature id="org.eclipse.ecf.filetransfer.ssl.feature" version="1.1.100.v20180301-0132" url="features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.100.v20180301-0132/">
+		</feature>
+		<feature id="org.eclipse.emf.mapping.ecore" version="2.12.0.v20190323-1059" url="features/org.eclipse.emf.mapping.ecore_2.12.0.v20190323-1059/">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.core.feature" version="1.6.300.v20190903-0934" url="features/org.eclipse.equinox.p2.core.feature_1.6.300.v20190903-0934/">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.extras.feature" version="1.4.500.v20190903-0934" url="features/org.eclipse.equinox.p2.extras.feature_1.4.500.v20190903-0934/">
+		</feature>
+		<feature id="org.eclipse.emf.ecore.editor" version="2.17.0.v20190528-0725" url="features/org.eclipse.emf.ecore.editor_2.17.0.v20190528-0725/">
+		</feature>
+		<feature id="org.eclipse.rcp" version="4.13.0.v20190916-1045" url="features/org.eclipse.rcp_4.13.0.v20190916-1045/">
+		</feature>
+		<feature id="org.eclipse.emf.mapping" version="2.13.0.v20190323-1059" url="features/org.eclipse.emf.mapping_2.13.0.v20190323-1059/">
+		</feature>
+		<feature id="org.eclipse.fordiac.ide.workbench.feature" version="1.11.0.201910071807" url="features/org.eclipse.fordiac.ide.workbench.feature_1.11.0.201910071807/">
+		</feature>
+		<feature id="org.eclipse.emf.common" version="2.16.0.v20190625-1131" url="features/org.eclipse.emf.common_2.16.0.v20190625-1131/">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.rcp.feature" version="1.4.500.v20190903-0934" url="features/org.eclipse.equinox.p2.rcp.feature_1.4.500.v20190903-0934/">
+		</feature>
+		<feature id="org.eclipse.emf.edit" version="2.15.0.v20190528-0725" url="features/org.eclipse.emf.edit_2.15.0.v20190528-0725/">
+		</feature>
+		<feature id="org.eclipse.fordiac.ide.typeeditor.feature" version="1.11.0.201910071807" url="features/org.eclipse.fordiac.ide.typeeditor.feature_1.11.0.201910071807/">
+		</feature>
+		<feature id="org.eclipse.fordiac.ide.deployment.feature" version="1.11.0.201910071807" url="features/org.eclipse.fordiac.ide.deployment.feature_1.11.0.201910071807/">
+		</feature>
+		<feature id="org.eclipse.xtext.xbase.lib" version="2.19.0.v20190902-0731" url="features/org.eclipse.xtext.xbase.lib_2.19.0.v20190902-0731/">
+		</feature>
+		<feature id="org.eclipse.emf.common.ui" version="2.17.0.v20190507-0402" url="features/org.eclipse.emf.common.ui_2.17.0.v20190507-0402/">
+		</feature>
+		<feature id="org.eclipse.emf.mwe2.language.sdk" version="2.11.0.201906111547" url="features/org.eclipse.emf.mwe2.language.sdk_2.11.0.201906111547/">
+		</feature>
+		<feature id="org.eclipse.emf.databinding" version="1.7.0.v20190323-1059" url="features/org.eclipse.emf.databinding_1.7.0.v20190323-1059/">
+		</feature>
+		<feature id="org.eclipse.emf.mapping.ui" version="2.13.0.v20190323-1059" url="features/org.eclipse.emf.mapping.ui_2.13.0.v20190323-1059/">
+		</feature>
+		<feature id="org.eclipse.gef" version="3.11.0.201606061308" url="features/org.eclipse.gef_3.11.0.201606061308/">
+		</feature>
+		<feature id="org.eclipse.emf.ecore" version="2.19.0.v20190822-1451" url="features/org.eclipse.emf.ecore_2.19.0.v20190822-1451/">
+		</feature>
+	</site>
+</config>

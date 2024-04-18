@@ -4786,3 +4786,12 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at java.base/java.net.Socket.connect(Socket.java:609)
 	at org.eclipse.fordiac.ide.deployment.iec61499.EthernetDeviceManagementCommunicationHandler.connect(EthernetDeviceManagementCommunicationHandler.java:64)
 	... 8 more
+!SESSION 2024-04-18 16:54:31.547 -----------------------------------------------
+eclipse.buildId=1.11.0
+java.version=11.0.22
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.fordiac.ide.ui 4 0 2024-04-18 16:54:37.946
+!MESSAGE Icon URL handler registered.
