@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE FBType SYSTEM "http://www.holobloc.com/xml/LibraryElement.dtd">
+<FBType Name="POOLING_STATION" OpcUa="DEVICE.SENSOR">
+  <InterfaceList>
+    <EventInputs>
+      <Event Name="INIT" Type="Event"/>
+      <Event Name="READ" Type="Event"/>
+      <Event Name="ON-OFF" Type="Event"/>
+    </EventInputs>
+    <EventOutputs>  
+      <Event Name="INIT_O" Type="Event"/>
+      <Event Name="READ_O" Type="Event">
+        <With Var="DB_RESULT"/>
+        <With Var="STATE"/>
+      </Event>
+    </EventOutputs>
+    <InputVars>
+      <VarDeclaration Name="HOST" Type="STRING" OpcUa="Constant"/>
+      <VarDeclaration Name="PORT" Type="UINT" OpcUa="Constant"/>
+      <VarDeclaration Name="USER" Type="STRING" OpcUa="Constant"/>
+      <VarDeclaration Name="PASSWORD" Type="STRING" OpcUa="Constant"/>
+      <VarDeclaration Name="DBNAME" Type="STRING" OpcUa="Constant"/>
+      <VarDeclaration Name="DELAY" Type="REAL"/>
+      <VarDeclaration Name="STATION_ID" Type="STRING" OpcUa="Constant"/>
+    </InputVars>
+    <OutputVars>
+      <VarDeclaration Name="DB_RESULT" Type="STRING"/>
+      <VarDeclaration Name="STATE" Type="STRING"/>
+    </OutputVars>
+  </InterfaceList>
+</FBType>

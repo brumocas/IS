@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE FBType SYSTEM "http://www.holobloc.com/xml/LibraryElement.dtd">
+<FBType Name="SERVO_RASPBERRY" OpcUa="SERVICE">
+  <InterfaceList>
+    <EventInputs>
+      <Event Name="INIT" Type="Event"/>
+      <Event Name="RUN" Type="Event" />
+      <Event Name="RIGHT" Type="Event">
+		<With Var="PIN"/>
+	  </Event>
+      <Event Name="LEFT" Type="Event">
+		<With Var="PIN"/>
+	  </Event>
+      <Event Name="SPEC" Type="Event" >
+		<With Var="PERCENTAGE"/>
+		<With Var="PIN"/>
+	  </Event>
+    </EventInputs>
+    <EventOutputs>
+      <Event Name="INIT_O" Type="Event"/>
+      <Event Name="RUN_O" Type="Event"/>
+    </EventOutputs>
+    <InputVars>
+      <VarDeclaration Name="PERCENTAGE" Type="STRING" OpcUa="Constant"/>
+      <VarDeclaration Name="PIN" Type="STRING" OpcUa="Constant"/>
+    </InputVars>
+    <OutputVars/>
+  </InterfaceList>
+</FBType>

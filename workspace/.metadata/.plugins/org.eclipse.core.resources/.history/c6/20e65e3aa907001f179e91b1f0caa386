@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE System SYSTEM "http://www.holobloc.com/xml/LibraryElement.dtd">
+<System Comment="" Name="SINF_0">
+  <Identification/>
+  <VersionInfo Author="eliseu" Date="2023-02-20" Version="1.0"/>
+  <Application Comment="" Name="SINF_0App">
+    <SubAppNetwork>
+      <FB Comment="" Name="PROD_MAN" Type="PROD_MAN" x="1343.75" y="-5900.0"/>
+      <FB Comment="" Name="STATION1" Type="STATION1" x="4231.25" y="112.5">
+        <Parameter Name="PARAMS_DATA" Value="[((20, 0.01), (30, 1)), ((50, 0.01), (90, 1)), ((1000, 1), (1500, 10)), ((400, 10), (200, 1)), ((1, 0), (0, 0))]"/>
+        <Parameter Name="LIM_ANOM" Value="0.3"/>
+        <Parameter Name="PARAMS_MTBF" Value="(18, 2.5)"/>
+        <Parameter Name="PARAMS_MTTS" Value="(2, 1.5)"/>
+        <Parameter Name="PARAMS_MTTR" Value="(5, 1.5)"/>
+        <Parameter Name="DELAY" Value="1"/>
+      </FB>
+      <FB Comment="" Name="STATION1_INFO" Type="STATION1_INFO" x="6112.5" y="112.5"/>
+      <FB Comment="" Name="STATION2" Type="STATION2" x="4231.25" y="1762.5">
+        <Parameter Name="PARAMS_DATA" Value="[((20, 0.01), (30, 1)), ((50, 0.01), (90, 1)), ((1200, 1), (2000, 10)),  ((400, 10), (200, 1)), ((1, 0), (0, 0)), ((50, 0.1), (100, 0.1)),((100, 10), (100, 10)),((100, 10), (100, 10)),((100, 10), (100,10))]"/>
+        <Parameter Name="LIM_ANOM" Value="0.3"/>
+        <Parameter Name="PARAMS_MTBF" Value="(18, 2.5)"/>
+        <Parameter Name="PARAMS_MTTS" Value="(2, 1.5)"/>
+        <Parameter Name="PARAMS_MTTR" Value="(5, 1.5)"/>
+        <Parameter Name="DELAY" Value="1"/>
+      </FB>
+      <FB Comment="" Name="STATION2_INFO" Type="STATION2_INFO" x="6112.5" y="1762.5"/>
+      <FB Comment="" Name="WOOD_DECODER" Type="WOOD_DECODER" x="7881.25" y="1406.25"/>
+      <FB Comment="" Name="STATION4" Type="STATION4" x="4231.25" y="5406.25">
+        <Parameter Name="PARAMS_DATA" Value="[((20, 0.01), (30, 1)), ((50, 0.01), (90, 1)), ((1500, 1), (2000, 10)), ((400, 10), (200, 1)), ((1, 0), (0, 0))]"/>
+        <Parameter Name="LIM_ANOM" Value="0.3"/>
+        <Parameter Name="PARAMS_MTBF" Value="(18, 2.5)"/>
+        <Parameter Name="PARAMS_MTTS" Value="(2, 1.5)"/>
+        <Parameter Name="PARAMS_MTTR" Value="(5, 1.5)"/>
+        <Parameter Name="DELAY" Value="1"/>
+      </FB>
+      <FB Comment="" Name="STATION4_INFO" Type="STATION4_INFO" x="6112.5" y="5406.25"/>
+      <FB Comment="" Name="STATION3" Type="STATION3" x="4231.25" y="3525.0">
+        <Parameter Name="PARAMS_DATA" Value="[((20, 0.01), (30, 1)), ((50, 0.01), (90, 1)), ((2000, 1), (3500, 10)), ((400, 10), (200, 1)), ((1, 0), (0, 0)), ((95, 0.01), (40, 3)), ((10, 0.01), (20, 1)), ((35, 0.1), (50, 1)), ((90, 0.1), (20, 1)), ((350, 10), (200, 10))]"/>
+        <Parameter Name="LIM_ANOM" Value="0.3"/>
+        <Parameter Name="PARAMS_MTBF" Value="(18, 2.5)"/>
+        <Parameter Name="PARAMS_MTTS" Value="(2, 1.5)"/>
+        <Parameter Name="PARAMS_MTTR" Value="(5, 1.5)"/>
+        <Parameter Name="DELAY" Value="1"/>
+      </FB>
+      <FB Comment="" Name="STATION5" Type="STATION2" x="4231.25" y="7525.0">
+        <Parameter Name="PARAMS_DATA" Value="[((20, 0.01), (30, 1)), ((50, 0.01), (90, 1)), ((1200, 1), (2000, 10)),  ((400, 10), (200, 1)), ((1, 0), (0, 0)), ((100, 10), (100, 10)),((100, 10), (100, 10)),((100, 10), (100,10))]"/>
+        <Parameter Name="LIM_ANOM" Value="0.3"/>
+        <Parameter Name="PARAMS_MTBF" Value="(18, 2.5)"/>
+        <Parameter Name="PARAMS_MTTS" Value="(2, 1.5)"/>
+        <Parameter Name="PARAMS_MTTR" Value="(5, 1.5)"/>
+        <Parameter Name="DELAY" Value="1"/>
+      </FB>
+      <FB Comment="" Name="STATION5_INFO" Type="STATION5_INFO" x="6112.5" y="7525.0"/>
+      <FB Comment="" Name="WOOD_DECODER_1" Type="WOOD_DECODER" x="7881.25" y="6937.5"/>
+      <FB Comment="" Name="WOOD_COUNTER" Type="WOOD_COUNTER" x="9293.75" y="6937.5"/>
+      <FB Comment="" Name="POSTGRE_DB_QUERY_STATIONS" Type="POSTGRE_DB_QUERY" x="18375.0" y="3500.0">
+        <Parameter Name="HOST" Value="db.fe.up.pt"/>
+        <Parameter Name="PORT" Value="5432"/>
+        <Parameter Name="USER" Value="sinfmeec21"/>
+        <Parameter Name="PASSWORD" Value="#sinf_gman24"/>
+        <Parameter Name="DBNAME" Value="sinfmeec21"/>
+      </FB>
+      <FB Comment="" Name="QUERY_STATION1" Type="QUERY_STATION1" x="11293.75" y="112.5"/>
+      <FB Comment="" Name="QUERY_STATION2" Type="QUERY_STATION2" x="11293.75" y="1762.5"/>
+      <FB Comment="" Name="QUERY_STATION3" Type="QUERY_STATION3" x="11293.75" y="3525.0"/>
+      <FB Comment="" Name="STATION3_INFO" Type="STATION3_INFO" x="6112.5" y="3525.0"/>
+      <FB Comment="" Name="STATION1_CONTROL" Type="PROD_MAN" x="2875.0" y="-9381.25"/>
+      <FB Comment="" Name="STATION2_CONTROL" Type="PROD_MAN" x="2875.0" y="-8018.75"/>
+      <FB Comment="" Name="STATION3_CONTROL" Type="PROD_MAN" x="2875.0" y="-6256.25"/>
+      <FB Comment="" Name="STATION4_CONTROL" Type="PROD_MAN" x="2875.0" y="-4375.0"/>
+      <FB Comment="" Name="STATION5_CONTROL" Type="PROD_MAN" x="2875.0" y="-2256.25"/>
+      <FB Comment="" Name="QUERY_STATION4" Type="QUERY_STATION4" x="11293.75" y="5406.25"/>
+      <FB Comment="" Name="QUERY_STATION5" Type="QUERY_STATION5" x="11293.75" y="7525.0"/>
+      <FB Comment="" Name="POOLING_STATION2" Type="POOLING_STATION" x="-2000.0" y="1750.0">
+        <Parameter Name="HOST" Value="db.fe.up.pt"/>
+        <Parameter Name="PORT" Value="5432"/>
+        <Parameter Name="USER" Value="sinfmeec21"/>
+        <Parameter Name="PASSWORD" Value="#sinf_gman24"/>
+        <Parameter Name="DBNAME" Value="sinfmeec21"/>
+        <Parameter Name="DELAY" Value="1"/>
+        <Parameter Name="STATION_ID" Value="2"/>
+      </FB>
+      <FB Comment="" Name="POOLING_STATION3" Type="POOLING_STATION" x="-2000.0" y="3500.0">
+        <Parameter Name="HOST" Value="db.fe.up.pt"/>
+        <Parameter Name="PORT" Value="5432"/>
+        <Parameter Name="USER" Value="sinfmeec21"/>
+        <Parameter Name="PASSWORD" Value="#sinf_gman24"/>
+        <Parameter Name="DBNAME" Value="sinfmeec21"/>
+        <Parameter Name="DELAY" Value="1"/>
+        <Parameter Name="STATION_ID" Value="3"/>
+      </FB>
+      <FB Comment="" Name="POOLING_STATION4" Type="POOLING_STATION" x="-2000.0" y="5375.0">
+        <Parameter Name="HOST" Value="db.fe.up.pt"/>
+        <Parameter Name="PORT" Value="5432"/>
+        <Parameter Name="USER" Value="sinfmeec21"/>
+        <Parameter Name="PASSWORD" Value="#sinf_gman24"/>
+        <Parameter Name="DBNAME" Value="sinfmeec21"/>
+        <Parameter Name="DELAY" Value="1"/>
+        <Parameter Name="STATION_ID" Value="4"/>
+      </FB>
+      <FB Comment="" Name="POOLING_STATION1" Type="POOLING_STATION" x="-2000.0" y="125.0">
+        <Parameter Name="HOST" Value="db.fe.up.pt"/>
+        <Parameter Name="PORT" Value="5432"/>
+        <Parameter Name="USER" Value="sinfmeec21"/>
+        <Parameter Name="PASSWORD" Value="#sinf_gman24"/>
+        <Parameter Name="DBNAME" Value="sinfmeec21"/>
+        <Parameter Name="DELAY" Value="1"/>
+        <Parameter Name="STATION_ID" Value="1"/>
+      </FB>
+      <FB Comment="" Name="POOLING_STATION5" Type="POOLING_STATION" x="-2000.0" y="7500.0">
+        <Parameter Name="HOST" Value="db.fe.up.pt"/>
+        <Parameter Name="PORT" Value="5432"/>
+        <Parameter Name="USER" Value="sinfmeec21"/>
+        <Parameter Name="PASSWORD" Value="#sinf_gman24"/>
+        <Parameter Name="DBNAME" Value="sinfmeec21"/>
+        <Parameter Name="DELAY" Value="1"/>
+        <Parameter Name="STATION_ID" Value="5"/>
+      </FB>
+      <FB Comment="" Name="POOLING_CONTROL" Type="PROD_MAN" x="-4000.0" y="3625.0"/>
+      <FB Comment="" Name="CONTROL_QUERY1" Type="CONTROL_QUERY" x="4375.0" y="-9375.0">
+        <Parameter Name="STATION_ID" Value="1"/>
+      </FB>
+      <FB Comment="" Name="POSTGRE_DB_QUERY_CONTROL" Type="POSTGRE_DB_QUERY" x="8875.0" y="-6250.0">
+        <Parameter Name="HOST" Value="db.fe.up.pt"/>
+        <Parameter Name="PORT" Value="5432"/>
+        <Parameter Name="USER" Value="sinfmeec21"/>
+        <Parameter Name="PASSWORD" Value="#sinf_gman24"/>
+        <Parameter Name="DBNAME" Value="sinfmeec21"/>
+      </FB>
+      <FB Comment="" Name="CONTROL_QUERY2" Type="CONTROL_QUERY" x="4375.0" y="-8000.0">
+        <Parameter Name="STATION_ID" Value="2"/>
+      </FB>
+      <FB Comment="" Name="CONTROL_QUERY3" Type="CONTROL_QUERY" x="4375.0" y="-6250.0">
+        <Parameter Name="STATION_ID" Value="3"/>
+      </FB>
+      <FB Comment="" Name="CONTROL_QUERY4" Type="CONTROL_QUERY" x="4375.0" y="-4375.0">
+        <Parameter Name="STATION_ID" Value="4"/>
+      </FB>
+      <FB Comment="" Name="CONTROL_QUERY5" Type="CONTROL_QUERY" x="4375.0" y="-2250.0">
+        <Parameter Name="STATION_ID" Value="5"/>
+      </FB>
+      <FB Comment="" Name="CONCAT_QUERY_CONTROL" Type="CONCAT_QUERY" x="6250.0" y="-6250.0"/>
+      <FB Comment="" Name="CONCAT_QUERY_STATIONS" Type="CONCAT_QUERY" x="14125.0" y="3500.0"/>
+      <FB Comment="" Name="STATION2_1" Type="STATION2" x="24225.0" y="7325.0"/>
+      <FB Comment="" Name="STATION_CONTROL" Type="STATION_CONTROL" x="-375.0" y="125.0"/>
+      <EventConnections>
+        <Connection Comment="" Destination="STATION1_INFO.RUN" Source="STATION1.READ_O"/>
+        <Connection Comment="" Destination="STATION2_INFO.RUN" Source="STATION2.READ_O"/>
+        <Connection Comment="" Destination="WOOD_DECODER.RUN" Source="STATION2_INFO.RUN_O" dx1="450.0"/>
+        <Connection Comment="" Destination="STATION4_INFO.RUN" Source="STATION4.READ_O"/>
+        <Connection Comment="" Destination="STATION5_INFO.RUN" Source="STATION5.READ_O"/>
+        <Connection Comment="" Destination="WOOD_DECODER_1.RUN" Source="STATION5_INFO.RUN_O" dx1="675.0"/>
+        <Connection Comment="" Destination="WOOD_COUNTER.RUN" Source="WOOD_DECODER_1.RUN_O"/>
+        <Connection Comment="" Destination="QUERY_STATION1.RUN" Source="STATION1_INFO.RUN_O"/>
+        <Connection Comment="" Destination="QUERY_STATION2.RUN" Source="WOOD_DECODER.RUN_O" dx1="475.0"/>
+        <Connection Comment="" Destination="STATION3_INFO.RUN" Source="STATION3.READ_O"/>
+        <Connection Comment="" Destination="QUERY_STATION3.RUN" Source="STATION3_INFO.RUN_O"/>
+        <Connection Comment="" Destination="STATION1_CONTROL.ON-OFF" Source="PROD_MAN.ON-OFF_O" dx1="362.5"/>
+        <Connection Comment="" Destination="STATION2_CONTROL.ON-OFF" Source="PROD_MAN.ON-OFF_O" dx1="350.0"/>
+        <Connection Comment="" Destination="STATION3_CONTROL.ON-OFF" Source="PROD_MAN.ON-OFF_O" dx1="637.5"/>
+        <Connection Comment="" Destination="STATION4_CONTROL.ON-OFF" Source="PROD_MAN.ON-OFF_O" dx1="331.25"/>
+        <Connection Comment="" Destination="STATION5_CONTROL.ON-OFF" Source="PROD_MAN.ON-OFF_O" dx1="312.5"/>
+        <Connection Comment="" Destination="QUERY_STATION4.RUN" Source="STATION4_INFO.RUN_O"/>
+        <Connection Comment="" Destination="QUERY_STATION5.RUN" Source="WOOD_COUNTER.RUN_O" dx1="443.75"/>
+        <Connection Comment="" Destination="POOLING_STATION1.ON-OFF" Source="POOLING_CONTROL.ON-OFF_O" dx1="381.25"/>
+        <Connection Comment="" Destination="POOLING_STATION3.ON-OFF" Source="POOLING_CONTROL.ON-OFF_O" dx1="656.25"/>
+        <Connection Comment="" Destination="POOLING_STATION4.ON-OFF" Source="POOLING_CONTROL.ON-OFF_O" dx1="375.0"/>
+        <Connection Comment="" Destination="POOLING_STATION5.ON-OFF" Source="POOLING_CONTROL.ON-OFF_O" dx1="362.5"/>
+        <Connection Comment="" Destination="POOLING_STATION2.ON-OFF" Source="POOLING_CONTROL.ON-OFF_O" dx1="375.0"/>
+        <Connection Comment="" Destination="CONTROL_QUERY1.RUN" Source="STATION1_CONTROL.ON-OFF_O"/>
+        <Connection Comment="" Destination="CONTROL_QUERY3.RUN" Source="STATION3_CONTROL.ON-OFF_O"/>
+        <Connection Comment="" Destination="CONTROL_QUERY2.RUN" Source="STATION2_CONTROL.ON-OFF_O" dx1="343.75"/>
+        <Connection Comment="" Destination="CONTROL_QUERY5.RUN" Source="STATION5_CONTROL.ON-OFF_O"/>
+        <Connection Comment="" Destination="CONTROL_QUERY4.RUN" Source="STATION4_CONTROL.ON-OFF_O"/>
+        <Connection Comment="" Destination="CONCAT_QUERY_CONTROL.RUN" Source="CONTROL_QUERY5.RUN_O" dx1="687.5"/>
+        <Connection Comment="" Destination="CONCAT_QUERY_CONTROL.RUN" Source="CONTROL_QUERY4.RUN_O" dx1="687.5"/>
+        <Connection Comment="" Destination="CONCAT_QUERY_CONTROL.RUN" Source="CONTROL_QUERY3.RUN_O"/>
+        <Connection Comment="" Destination="CONCAT_QUERY_CONTROL.RUN" Source="CONTROL_QUERY2.RUN_O" dx1="687.5"/>
+        <Connection Comment="" Destination="CONCAT_QUERY_CONTROL.RUN" Source="CONTROL_QUERY1.RUN_O" dx1="687.5"/>
+        <Connection Comment="" Destination="POSTGRE_DB_QUERY_CONTROL.RUN" Source="CONCAT_QUERY_CONTROL.RUN_O"/>
+        <Connection Comment="" Destination="CONCAT_QUERY_STATIONS.RUN" Source="QUERY_STATION1.RUN_O" dx1="993.75"/>
+        <Connection Comment="" Destination="CONCAT_QUERY_STATIONS.RUN" Source="QUERY_STATION2.RUN_O" dx1="993.75"/>
+        <Connection Comment="" Destination="CONCAT_QUERY_STATIONS.RUN" Source="QUERY_STATION3.RUN_O" dx1="956.25"/>
+        <Connection Comment="" Destination="CONCAT_QUERY_STATIONS.RUN" Source="QUERY_STATION4.RUN_O" dx1="993.75"/>
+        <Connection Comment="" Destination="CONCAT_QUERY_STATIONS.RUN" Source="QUERY_STATION5.RUN_O" dx1="787.5"/>
+        <Connection Comment="" Destination="POSTGRE_DB_QUERY_STATIONS.RUN" Source="CONCAT_QUERY_STATIONS.RUN_O"/>
+        <Connection Comment="" Destination="STATION_CONTROL.RUN" Source="POOLING_STATION1.READ_O"/>
+      </EventConnections>
+      <DataConnections>
+        <Connection Comment="" Destination="STATION1_INFO.DATA" Source="STATION1.DATA" dx1="443.75"/>
+        <Connection Comment="" Destination="STATION2_INFO.DATA" Source="STATION2.DATA" dx1="831.25"/>
+        <Connection Comment="" Destination="STATION4_INFO.DATA" Source="STATION4.DATA" dx1="831.25"/>
+        <Connection Comment="" Destination="STATION5_INFO.DATA" Source="STATION5.DATA" dx1="875.0"/>
+        <Connection Comment="" Destination="WOOD_DECODER_1.R" Source="STATION5_INFO.R" dx1="506.25"/>
+        <Connection Comment="" Destination="WOOD_DECODER_1.G" Source="STATION5_INFO.G" dx1="506.25"/>
+        <Connection Comment="" Destination="WOOD_DECODER_1.B" Source="STATION5_INFO.B" dx1="506.25"/>
+        <Connection Comment="" Destination="WOOD_COUNTER.TYPE" Source="WOOD_DECODER_1.WOOD_TYPE"/>
+        <Connection Comment="" Destination="WOOD_DECODER.R" Source="STATION2_INFO.R" dx1="443.75"/>
+        <Connection Comment="" Destination="WOOD_DECODER.G" Source="STATION2_INFO.G" dx1="450.0"/>
+        <Connection Comment="" Destination="WOOD_DECODER.B" Source="STATION2_INFO.B" dx1="450.0"/>
+        <Connection Comment="" Destination="QUERY_STATION1.STATUS" Source="STATION1_INFO.STATUS"/>
+        <Connection Comment="" Destination="QUERY_STATION1.TEMP" Source="STATION1_INFO.TEMP"/>
+        <Connection Comment="" Destination="QUERY_STATION1.H" Source="STATION1_INFO.H"/>
+        <Connection Comment="" Destination="QUERY_STATION1.P" Source="STATION1_INFO.P"/>
+        <Connection Comment="" Destination="QUERY_STATION1.LUM" Source="STATION1_INFO.LUM"/>
+        <Connection Comment="" Destination="QUERY_STATION1.COUNT" Source="STATION1_INFO.COUNT"/>
+        <Connection Comment="" Destination="QUERY_STATION2.STATUS" Source="STATION2_INFO.STATUS"/>
+        <Connection Comment="" Destination="QUERY_STATION2.TEMP" Source="STATION2_INFO.TEMP"/>
+        <Connection Comment="" Destination="QUERY_STATION2.H" Source="STATION2_INFO.H"/>
+        <Connection Comment="" Destination="QUERY_STATION2.P" Source="STATION2_INFO.P"/>
+        <Connection Comment="" Destination="QUERY_STATION2.LUM" Source="STATION2_INFO.LUM"/>
+        <Connection Comment="" Destination="QUERY_STATION2.COUNT" Source="STATION2_INFO.COUNT"/>
+        <Connection Comment="" Destination="QUERY_STATION2.DIM" Source="STATION2_INFO.DIM"/>
+        <Connection Comment="" Destination="QUERY_STATION2.R" Source="STATION2_INFO.R"/>
+        <Connection Comment="" Destination="QUERY_STATION2.G" Source="STATION2_INFO.G"/>
+        <Connection Comment="" Destination="QUERY_STATION2.B" Source="STATION2_INFO.B"/>
+        <Connection Comment="" Destination="STATION3_INFO.DATA" Source="STATION3.DATA" dx1="506.25"/>
+        <Connection Comment="" Destination="QUERY_STATION3.STATUS" Source="STATION3_INFO.STATUS"/>
+        <Connection Comment="" Destination="QUERY_STATION3.TEMP" Source="STATION3_INFO.TEMP"/>
+        <Connection Comment="" Destination="QUERY_STATION3.H" Source="STATION3_INFO.H"/>
+        <Connection Comment="" Destination="QUERY_STATION3.P" Source="STATION3_INFO.P"/>
+        <Connection Comment="" Destination="QUERY_STATION3.LUM" Source="STATION3_INFO.LUM"/>
+        <Connection Comment="" Destination="QUERY_STATION3.COUNT" Source="STATION3_INFO.COUNT"/>
+        <Connection Comment="" Destination="QUERY_STATION3.H_WASHING" Source="STATION3_INFO.H_WASHING"/>
+        <Connection Comment="" Destination="QUERY_STATION3.F_DRILLING" Source="STATION3_INFO.F_DRILLING"/>
+        <Connection Comment="" Destination="QUERY_STATION3.T_DRYING" Source="STATION3_INFO.T_DRYING"/>
+        <Connection Comment="" Destination="QUERY_STATION3.GAS_VARNISH" Source="STATION3_INFO.GAS_VARNISH"/>
+        <Connection Comment="" Destination="QUERY_STATION3.LUM_CURING" Source="STATION3_INFO.LUM_CURING"/>
+        <Connection Comment="" Destination="QUERY_STATION4.ROBOT1" Source="STATION4_INFO.ROBOT1"/>
+        <Connection Comment="" Destination="QUERY_STATION4.COUNT" Source="STATION4_INFO.COUNT"/>
+        <Connection Comment="" Destination="QUERY_STATION4.LUM" Source="STATION4_INFO.LUM"/>
+        <Connection Comment="" Destination="QUERY_STATION4.P" Source="STATION4_INFO.P"/>
+        <Connection Comment="" Destination="QUERY_STATION4.H" Source="STATION4_INFO.H"/>
+        <Connection Comment="" Destination="QUERY_STATION4.TEMP" Source="STATION4_INFO.TEMP"/>
+        <Connection Comment="" Destination="QUERY_STATION4.STATUS" Source="STATION4_INFO.STATUS"/>
+        <Connection Comment="" Destination="QUERY_STATION5.STATUS" Source="STATION5_INFO.STATUS"/>
+        <Connection Comment="" Destination="QUERY_STATION5.TEMP" Source="STATION5_INFO.TEMP"/>
+        <Connection Comment="" Destination="QUERY_STATION5.H" Source="STATION5_INFO.H"/>
+        <Connection Comment="" Destination="QUERY_STATION5.P" Source="STATION5_INFO.P"/>
+        <Connection Comment="" Destination="QUERY_STATION5.LUM" Source="STATION5_INFO.LUM"/>
+        <Connection Comment="" Destination="QUERY_STATION5.COUNT" Source="STATION5_INFO.COUNT"/>
+        <Connection Comment="" Destination="QUERY_STATION5.R" Source="STATION5_INFO.R"/>
+        <Connection Comment="" Destination="QUERY_STATION5.G" Source="STATION5_INFO.G"/>
+        <Connection Comment="" Destination="QUERY_STATION5.B" Source="STATION5_INFO.B"/>
+        <Connection Comment="" Destination="QUERY_STATION5.COUNT_CHERRY" Source="WOOD_COUNTER.CONVEYOR_CHERRY" dx1="443.75"/>
+        <Connection Comment="" Destination="QUERY_STATION5.COUNT_PINE" Source="WOOD_COUNTER.CONVEYOR_PINE" dx1="443.75"/>
+        <Connection Comment="" Destination="QUERY_STATION5.COUNT_MAHOGANY" Source="WOOD_COUNTER.CONVEYOR_MAHOGANY" dx1="443.75"/>
+        <Connection Comment="" Destination="CONTROL_QUERY1.STATE" Source="STATION1_CONTROL.STATE" dx1="362.5"/>
+        <Connection Comment="" Destination="CONTROL_QUERY3.STATE" Source="STATION3_CONTROL.STATE" dx1="343.75"/>
+        <Connection Comment="" Destination="CONTROL_QUERY2.STATE" Source="STATION2_CONTROL.STATE" dx1="343.75"/>
+        <Connection Comment="" Destination="CONTROL_QUERY5.STATE" Source="STATION5_CONTROL.STATE" dx1="343.75"/>
+        <Connection Comment="" Destination="CONTROL_QUERY4.STATE" Source="STATION4_CONTROL.STATE" dx1="343.75"/>
+        <Connection Comment="" Destination="CONCAT_QUERY_CONTROL.QUERY1" Source="CONTROL_QUERY1.QUERY" dx1="687.5"/>
+        <Connection Comment="" Destination="CONCAT_QUERY_CONTROL.QUERY2" Source="CONTROL_QUERY2.QUERY" dx1="687.5"/>
+        <Connection Comment="" Destination="CONCAT_QUERY_CONTROL.QUERY3" Source="CONTROL_QUERY3.QUERY" dx1="687.5"/>
+        <Connection Comment="" Destination="CONCAT_QUERY_CONTROL.QUERY4" Source="CONTROL_QUERY4.QUERY" dx1="687.5"/>
+        <Connection Comment="" Destination="CONCAT_QUERY_CONTROL.QUERY5" Source="CONTROL_QUERY5.QUERY" dx1="687.5"/>
+        <Connection Comment="" Destination="POSTGRE_DB_QUERY_CONTROL.QUERY" Source="CONCAT_QUERY_CONTROL.QUERY" dx1="943.75"/>
+        <Connection Comment="" Destination="CONCAT_QUERY_STATIONS.QUERY1" Source="QUERY_STATION1.QUERY" dx1="993.75"/>
+        <Connection Comment="" Destination="CONCAT_QUERY_STATIONS.QUERY2" Source="QUERY_STATION2.QUERY" dx1="993.75"/>
+        <Connection Comment="" Destination="CONCAT_QUERY_STATIONS.QUERY3" Source="QUERY_STATION3.QUERY" dx1="956.25"/>
+        <Connection Comment="" Destination="CONCAT_QUERY_STATIONS.QUERY4" Source="QUERY_STATION4.QUERY" dx1="993.75"/>
+        <Connection Comment="" Destination="CONCAT_QUERY_STATIONS.QUERY5" Source="QUERY_STATION5.QUERY" dx1="775.0"/>
+        <Connection Comment="" Destination="POSTGRE_DB_QUERY_STATIONS.QUERY" Source="CONCAT_QUERY_STATIONS.QUERY" dx1="1606.25"/>
+        <Connection Comment="" Destination="STATION_CONTROL.ON" Source="POOLING_STATION1.DB_RESULT"/>
+      </DataConnections>
+    </SubAppNetwork>
+  </Application>
+  <Device Comment="" Name="FORTE_PC" Type="FORTE_PC" x="5243.75" y="1993.75">
+    <Parameter Name="MGR_ID" Value="&quot;localhost:61499&quot;"/>
+    <Attribute Comment="device profile" Name="Profile" Type="STRING" Value="HOLOBLOC"/>
+    <Attribute Comment="color" Name="Color" Type="STRING" Value="102,239,165"/>
+    <Resource Comment="" Name="DIN1" Type="EMB_RES" x="0.0" y="0.0">
+      <FBNetwork>
+        <FB Comment="" Name="CONTROL_QUERY1" Type="CONTROL_QUERY" x="5875.0" y="-8875.0">
+          <Parameter Name="STATION_ID" Value="1"/>
+        </FB>
+        <FB Comment="" Name="POOLING_CONTROL" Type="PROD_MAN" x="-4500.0" y="3875.0"/>
+        <FB Comment="" Name="POOLING_STATION5" Type="POOLING_STATION" x="-2000.0" y="7500.0">
+          <Parameter Name="HOST" Value="db.fe.up.pt"/>
+          <Parameter Name="PORT" Value="5432"/>
+          <Parameter Name="USER" Value="sinfmeec21"/>
+          <Parameter Name="PASSWORD" Value="#sinf_gman24"/>
+          <Parameter Name="DBNAME" Value="sinfmeec21"/>
+          <Parameter Name="DELAY" Value="1"/>
+          <Parameter Name="STATION_ID" Value="5"/>
+        </FB>
+        <FB Comment="" Name="POOLING_STATION1" Type="POOLING_STATION" x="-2000.0" y="125.0">
+          <Parameter Name="HOST" Value="db.fe.up.pt"/>
+          <Parameter Name="PORT" Value="5432"/>
+          <Parameter Name="USER" Value="sinfmeec21"/>
+          <Parameter Name="PASSWORD" Value="#sinf_gman24"/>
+          <Parameter Name="DBNAME" Value="sinfmeec21"/>
+          <Parameter Name="DELAY" Value="1"/>
+          <Parameter Name="STATION_ID" Value="1"/>
+        </FB>
+        <FB Comment="" Name="POOLING_STATION4" Type="POOLING_STATION" x="-2000.0" y="5375.0">
+          <Parameter Name="HOST" Value="db.fe.up.pt"/>
+          <Parameter Name="PORT" Value="5432"/>
+          <Parameter Name="USER" Value="sinfmeec21"/>
+          <Parameter Name="PASSWORD" Value="#sinf_gman24"/>
+          <Parameter Name="DBNAME" Value="sinfmeec21"/>
+          <Parameter Name="DELAY" Value="1"/>
+          <Parameter Name="STATION_ID" Value="4"/>
+        </FB>
+        <FB Comment="" Name="POOLING_STATION3" Type="POOLING_STATION" x="-2000.0" y="3500.0">
+          <Parameter Name="HOST" Value="db.fe.up.pt"/>
+          <Parameter Name="PORT" Value="5432"/>
+          <Parameter Name="USER" Value="sinfmeec21"/>
+          <Parameter Name="PASSWORD" Value="#sinf_gman24"/>
+          <Parameter Name="DBNAME" Value="sinfmeec21"/>
+          <Parameter Name="DELAY" Value="1"/>
+          <Parameter Name="STATION_ID" Value="3"/>
+        </FB>
+        <FB Comment="" Name="POOLING_STATION2" Type="POOLING_STATION" x="-2000.0" y="1750.0">
+          <Parameter Name="HOST" Value="db.fe.up.pt"/>
+          <Parameter Name="PORT" Value="5432"/>
+          <Parameter Name="USER" Value="sinfmeec21"/>
+          <Parameter Name="PASSWORD" Value="#sinf_gman24"/>
+          <Parameter Name="DBNAME" Value="sinfmeec21"/>
+          <Parameter Name="DELAY" Value="1"/>
+          <Parameter Name="STATION_ID" Value="2"/>
+        </FB>
+        <FB Comment="" Name="QUERY_STATION5" Type="QUERY_STATION5" x="11293.75" y="7525.0"/>
+        <FB Comment="" Name="QUERY_STATION4" Type="QUERY_STATION4" x="8350.0" y="5406.25"/>
+        <FB Comment="" Name="STATION5_CONTROL" Type="PROD_MAN" x="-937.5" y="7525.0"/>
+        <FB Comment="" Name="STATION4_CONTROL" Type="PROD_MAN" x="-937.5" y="5406.25"/>
+        <FB Comment="" Name="STATION3_CONTROL" Type="PROD_MAN" x="-937.5" y="3525.0"/>
+        <FB Comment="" Name="STATION2_CONTROL" Type="PROD_MAN" x="-937.5" y="1762.5"/>
+        <FB Comment="" Name="STATION1_CONTROL" Type="PROD_MAN" x="-937.5" y="350.0"/>
+        <FB Comment="" Name="STATION3_INFO" Type="STATION3_INFO" x="6112.5" y="3525.0"/>
+        <FB Comment="" Name="QUERY_STATION3" Type="QUERY_STATION3" x="9406.25" y="3525.0"/>
+        <FB Comment="" Name="QUERY_STATION2" Type="QUERY_STATION2" x="9525.0" y="1762.5"/>
+        <FB Comment="" Name="QUERY_STATION1" Type="QUERY_STATION1" x="9406.25" y="112.5"/>
+        <FB Comment="" Name="POSTGRE_DB_QUERY_STATIONS" Type="POSTGRE_DB_QUERY" x="10100.0" y="350.0">
+          <Parameter Name="HOST" Value="db.fe.up.pt"/>
+          <Parameter Name="PORT" Value="5432"/>
+          <Parameter Name="USER" Value="sinfmeec21"/>
+          <Parameter Name="PASSWORD" Value="#sinf_gman24"/>
+          <Parameter Name="DBNAME" Value="sinfmeec21"/>
+        </FB>
+        <FB Comment="" Name="WOOD_COUNTER" Type="WOOD_COUNTER" x="9175.0" y="8937.5"/>
+        <FB Comment="" Name="WOOD_DECODER_1" Type="WOOD_DECODER" x="8937.5" y="8937.5"/>
+        <FB Comment="" Name="STATION5_INFO" Type="STATION5_INFO" x="7175.0" y="8350.0"/>
+        <FB Comment="" Name="STATION5" Type="STATION2" x="4231.25" y="8350.0">
+          <Parameter Name="PARAMS_DATA" Value="[((20, 0.01), (30, 1)), ((50, 0.01), (90, 1)), ((1200, 1), (2000, 10)),  ((400, 10), (200, 1)), ((1, 0), (0, 0)), ((100, 10), (100, 10)),((100, 10), (100, 10)),((100, 10), (100,10))]"/>
+          <Parameter Name="LIM_ANOM" Value="0.3"/>
+          <Parameter Name="PARAMS_MTBF" Value="(18, 2.5)"/>
+          <Parameter Name="PARAMS_MTTS" Value="(2, 1.5)"/>
+          <Parameter Name="PARAMS_MTTR" Value="(5, 1.5)"/>
+          <Parameter Name="DELAY" Value="1"/>
+        </FB>
+        <FB Comment="" Name="STATION3" Type="STATION3" x="4231.25" y="4350.0">
+          <Parameter Name="PARAMS_DATA" Value="[((20, 0.01), (30, 1)), ((50, 0.01), (90, 1)), ((2000, 1), (3500, 10)), ((400, 10), (200, 1)), ((1, 0), (0, 0)), ((95, 0.01), (40, 3)), ((10, 0.01), (20, 1)), ((35, 0.1), (50, 1)), ((90, 0.1), (20, 1)), ((350, 10), (200, 10))]"/>
+          <Parameter Name="LIM_ANOM" Value="0.3"/>
+          <Parameter Name="PARAMS_MTBF" Value="(18, 2.5)"/>
+          <Parameter Name="PARAMS_MTTS" Value="(2, 1.5)"/>
+          <Parameter Name="PARAMS_MTTR" Value="(5, 1.5)"/>
+          <Parameter Name="DELAY" Value="1"/>
+        </FB>
+        <FB Comment="" Name="STATION4_INFO" Type="STATION4_INFO" x="7056.25" y="5881.25"/>
+        <FB Comment="" Name="STATION4" Type="STATION4" x="4081.25" y="4843.75">
+          <Parameter Name="PARAMS_DATA" Value="[((20, 0.01), (30, 1)), ((50, 0.01), (90, 1)), ((1500, 1), (2000, 10)), ((400, 10), (200, 1)), ((1, 0), (0, 0))]"/>
+          <Parameter Name="LIM_ANOM" Value="0.3"/>
+          <Parameter Name="PARAMS_MTBF" Value="(18, 2.5)"/>
+          <Parameter Name="PARAMS_MTTS" Value="(2, 1.5)"/>
+          <Parameter Name="PARAMS_MTTR" Value="(5, 1.5)"/>
+          <Parameter Name="DELAY" Value="1"/>
+        </FB>
+        <FB Comment="" Name="WOOD_DECODER" Type="WOOD_DECODER" x="7993.75" y="2818.75"/>
+        <FB Comment="" Name="STATION2_INFO" Type="STATION2_INFO" x="6350.0" y="2112.5"/>
+        <FB Comment="" Name="STATION2" Type="STATION2" x="3525.0" y="1993.75">
+          <Parameter Name="PARAMS_DATA" Value="[((20, 0.01), (30, 1)), ((50, 0.01), (90, 1)), ((1200, 1), (2000, 10)),  ((400, 10), (200, 1)), ((1, 0), (0, 0)), ((50, 0.1), (100, 0.1)),((100, 10), (100, 10)),((100, 10), (100, 10)),((100, 10), (100,10))]"/>
+          <Parameter Name="LIM_ANOM" Value="0.3"/>
+          <Parameter Name="PARAMS_MTBF" Value="(18, 2.5)"/>
+          <Parameter Name="PARAMS_MTTS" Value="(2, 1.5)"/>
+          <Parameter Name="PARAMS_MTTR" Value="(5, 1.5)"/>
+          <Parameter Name="DELAY" Value="1"/>
+        </FB>
+        <FB Comment="" Name="STATION1_INFO" Type="STATION1_INFO" x="5406.25" y="2112.5"/>
+        <FB Comment="" Name="STATION1" Type="STATION1" x="5881.25" y="1881.25">
+          <Parameter Name="PARAMS_DATA" Value="[((20, 0.01), (30, 1)), ((50, 0.01), (90, 1)), ((1000, 1), (1500, 10)), ((400, 10), (200, 1)), ((1, 0), (0, 0))]"/>
+          <Parameter Name="LIM_ANOM" Value="0.3"/>
+          <Parameter Name="PARAMS_MTBF" Value="(18, 2.5)"/>
+          <Parameter Name="PARAMS_MTTS" Value="(2, 1.5)"/>
+          <Parameter Name="PARAMS_MTTR" Value="(5, 1.5)"/>
+          <Parameter Name="DELAY" Value="1"/>
+        </FB>
+        <FB Comment="" Name="PROD_MAN" Type="PROD_MAN" x="993.75" y="993.75"/>
+        <FB Comment="" Name="POSTGRE_DB_QUERY_CONTROL" Type="POSTGRE_DB_QUERY" x="11000.0" y="-8875.0">
+          <Parameter Name="HOST" Value="db.fe.up.pt"/>
+          <Parameter Name="PORT" Value="5432"/>
+          <Parameter Name="USER" Value="sinfmeec21"/>
+          <Parameter Name="PASSWORD" Value="#sinf_gman24"/>
+          <Parameter Name="DBNAME" Value="sinfmeec21"/>
+        </FB>
+        <FB Comment="" Name="CONTROL_QUERY5" Type="CONTROL_QUERY" x="5500.0" y="-1750.0">
+          <Parameter Name="STATION_ID" Value="5"/>
+        </FB>
+        <FB Comment="" Name="CONTROL_QUERY4" Type="CONTROL_QUERY" x="5500.0" y="-3875.0">
+          <Parameter Name="STATION_ID" Value="4"/>
+        </FB>
+        <FB Comment="" Name="CONTROL_QUERY3" Type="CONTROL_QUERY" x="5500.0" y="-5750.0">
+          <Parameter Name="STATION_ID" Value="3"/>
+        </FB>
+        <FB Comment="" Name="CONTROL_QUERY2" Type="CONTROL_QUERY" x="5500.0" y="-7500.0">
+          <Parameter Name="STATION_ID" Value="2"/>
+        </FB>
+        <FB Comment="" Name="CONCAT_QUERY_CONTROL" Type="CONCAT_QUERY" x="7000.0" y="-6275.0"/>
+        <FB Comment="" Name="CONCAT_QUERY_STATIONS" Type="CONCAT_QUERY" x="14125.0" y="3500.0"/>
+        <FB Comment="" Name="STATION_CONTROL" Type="STATION_CONTROL" x="-375.0" y="125.0"/>
+        <EventConnections>
+          <Connection Comment="" Destination="POOLING_STATION5.ON-OFF" Source="POOLING_CONTROL.ON-OFF_O"/>
+          <Connection Comment="" Destination="POOLING_STATION1.ON-OFF" Source="POOLING_CONTROL.ON-OFF_O"/>
+          <Connection Comment="" Destination="POOLING_STATION4.ON-OFF" Source="POOLING_CONTROL.ON-OFF_O"/>
+          <Connection Comment="" Destination="POOLING_STATION3.ON-OFF" Source="POOLING_CONTROL.ON-OFF_O"/>
+          <Connection Comment="" Destination="POOLING_STATION2.ON-OFF" Source="POOLING_CONTROL.ON-OFF_O"/>
+          <Connection Comment="" Destination="CONTROL_QUERY1.RUN" Source="STATION1_CONTROL.ON-OFF_O"/>
+          <Connection Comment="" Destination="QUERY_STATION3.RUN" Source="STATION3_INFO.RUN_O"/>
+          <Connection Comment="" Destination="QUERY_STATION5.RUN" Source="WOOD_COUNTER.RUN_O"/>
+          <Connection Comment="" Destination="WOOD_COUNTER.RUN" Source="WOOD_DECODER_1.RUN_O"/>
+          <Connection Comment="" Destination="WOOD_DECODER_1.RUN" Source="STATION5_INFO.RUN_O"/>
+          <Connection Comment="" Destination="STATION5_INFO.RUN" Source="STATION5.READ_O"/>
+          <Connection Comment="" Destination="STATION3_INFO.RUN" Source="STATION3.READ_O"/>
+          <Connection Comment="" Destination="QUERY_STATION4.RUN" Source="STATION4_INFO.RUN_O"/>
+          <Connection Comment="" Destination="STATION4_INFO.RUN" Source="STATION4.READ_O"/>
+          <Connection Comment="" Destination="QUERY_STATION2.RUN" Source="WOOD_DECODER.RUN_O"/>
+          <Connection Comment="" Destination="WOOD_DECODER.RUN" Source="STATION2_INFO.RUN_O"/>
+          <Connection Comment="" Destination="STATION2_INFO.RUN" Source="STATION2.READ_O"/>
+          <Connection Comment="" Destination="QUERY_STATION1.RUN" Source="STATION1_INFO.RUN_O"/>
+          <Connection Comment="" Destination="STATION1_INFO.RUN" Source="STATION1.READ_O"/>
+          <Connection Comment="" Destination="STATION1_CONTROL.ON-OFF" Source="PROD_MAN.ON-OFF_O"/>
+          <Connection Comment="" Destination="STATION2_CONTROL.ON-OFF" Source="PROD_MAN.ON-OFF_O"/>
+          <Connection Comment="" Destination="STATION3_CONTROL.ON-OFF" Source="PROD_MAN.ON-OFF_O"/>
+          <Connection Comment="" Destination="STATION4_CONTROL.ON-OFF" Source="PROD_MAN.ON-OFF_O"/>
+          <Connection Comment="" Destination="STATION5_CONTROL.ON-OFF" Source="PROD_MAN.ON-OFF_O"/>
+          <Connection Comment="" Destination="CONTROL_QUERY5.RUN" Source="STATION5_CONTROL.ON-OFF_O"/>
+          <Connection Comment="" Destination="CONTROL_QUERY4.RUN" Source="STATION4_CONTROL.ON-OFF_O"/>
+          <Connection Comment="" Destination="CONTROL_QUERY3.RUN" Source="STATION3_CONTROL.ON-OFF_O"/>
+          <Connection Comment="" Destination="CONTROL_QUERY2.RUN" Source="STATION2_CONTROL.ON-OFF_O"/>
+          <Connection Comment="" Destination="CONCAT_QUERY_CONTROL.RUN" Source="CONTROL_QUERY5.RUN_O"/>
+          <Connection Comment="" Destination="CONCAT_QUERY_CONTROL.RUN" Source="CONTROL_QUERY4.RUN_O"/>
+          <Connection Comment="" Destination="CONCAT_QUERY_CONTROL.RUN" Source="CONTROL_QUERY3.RUN_O"/>
+          <Connection Comment="" Destination="CONCAT_QUERY_CONTROL.RUN" Source="CONTROL_QUERY2.RUN_O"/>
+          <Connection Comment="" Destination="CONCAT_QUERY_CONTROL.RUN" Source="CONTROL_QUERY1.RUN_O"/>
+          <Connection Comment="" Destination="POSTGRE_DB_QUERY_CONTROL.RUN" Source="CONCAT_QUERY_CONTROL.RUN_O"/>
+          <Connection Comment="" Destination="CONCAT_QUERY_STATIONS.RUN" Source="QUERY_STATION1.RUN_O"/>
+          <Connection Comment="" Destination="CONCAT_QUERY_STATIONS.RUN" Source="QUERY_STATION2.RUN_O"/>
+          <Connection Comment="" Destination="CONCAT_QUERY_STATIONS.RUN" Source="QUERY_STATION3.RUN_O"/>
+          <Connection Comment="" Destination="CONCAT_QUERY_STATIONS.RUN" Source="QUERY_STATION4.RUN_O"/>
+          <Connection Comment="" Destination="CONCAT_QUERY_STATIONS.RUN" Source="QUERY_STATION5.RUN_O"/>
+          <Connection Comment="" Destination="POSTGRE_DB_QUERY_STATIONS.RUN" Source="CONCAT_QUERY_STATIONS.RUN_O"/>
+          <Connection Comment="" Destination="STATION_CONTROL.RUN" Source="POOLING_STATION1.READ_O"/>
+        </EventConnections>
+        <DataConnections>
+          <Connection Comment="" Destination="CONTROL_QUERY1.STATE" Source="STATION1_CONTROL.STATE"/>
+          <Connection Comment="" Destination="QUERY_STATION3.LUM_CURING" Source="STATION3_INFO.LUM_CURING"/>
+          <Connection Comment="" Destination="QUERY_STATION3.GAS_VARNISH" Source="STATION3_INFO.GAS_VARNISH"/>
+          <Connection Comment="" Destination="QUERY_STATION3.T_DRYING" Source="STATION3_INFO.T_DRYING"/>
+          <Connection Comment="" Destination="QUERY_STATION3.F_DRILLING" Source="STATION3_INFO.F_DRILLING"/>
+          <Connection Comment="" Destination="QUERY_STATION3.H_WASHING" Source="STATION3_INFO.H_WASHING"/>
+          <Connection Comment="" Destination="QUERY_STATION3.COUNT" Source="STATION3_INFO.COUNT"/>
+          <Connection Comment="" Destination="QUERY_STATION3.LUM" Source="STATION3_INFO.LUM"/>
+          <Connection Comment="" Destination="QUERY_STATION3.P" Source="STATION3_INFO.P"/>
+          <Connection Comment="" Destination="QUERY_STATION3.H" Source="STATION3_INFO.H"/>
+          <Connection Comment="" Destination="QUERY_STATION3.TEMP" Source="STATION3_INFO.TEMP"/>
+          <Connection Comment="" Destination="QUERY_STATION3.STATUS" Source="STATION3_INFO.STATUS"/>
+          <Connection Comment="" Destination="QUERY_STATION5.COUNT_MAHOGANY" Source="WOOD_COUNTER.CONVEYOR_MAHOGANY"/>
+          <Connection Comment="" Destination="QUERY_STATION5.COUNT_PINE" Source="WOOD_COUNTER.CONVEYOR_PINE"/>
+          <Connection Comment="" Destination="QUERY_STATION5.COUNT_CHERRY" Source="WOOD_COUNTER.CONVEYOR_CHERRY"/>
+          <Connection Comment="" Destination="WOOD_COUNTER.TYPE" Source="WOOD_DECODER_1.WOOD_TYPE"/>
+          <Connection Comment="" Destination="WOOD_DECODER_1.B" Source="STATION5_INFO.B"/>
+          <Connection Comment="" Destination="QUERY_STATION5.B" Source="STATION5_INFO.B"/>
+          <Connection Comment="" Destination="WOOD_DECODER_1.G" Source="STATION5_INFO.G"/>
+          <Connection Comment="" Destination="QUERY_STATION5.G" Source="STATION5_INFO.G"/>
+          <Connection Comment="" Destination="WOOD_DECODER_1.R" Source="STATION5_INFO.R"/>
+          <Connection Comment="" Destination="QUERY_STATION5.R" Source="STATION5_INFO.R"/>
+          <Connection Comment="" Destination="QUERY_STATION5.COUNT" Source="STATION5_INFO.COUNT"/>
+          <Connection Comment="" Destination="QUERY_STATION5.LUM" Source="STATION5_INFO.LUM"/>
+          <Connection Comment="" Destination="QUERY_STATION5.P" Source="STATION5_INFO.P"/>
+          <Connection Comment="" Destination="QUERY_STATION5.H" Source="STATION5_INFO.H"/>
+          <Connection Comment="" Destination="QUERY_STATION5.TEMP" Source="STATION5_INFO.TEMP"/>
+          <Connection Comment="" Destination="QUERY_STATION5.STATUS" Source="STATION5_INFO.STATUS"/>
+          <Connection Comment="" Destination="STATION5_INFO.DATA" Source="STATION5.DATA"/>
+          <Connection Comment="" Destination="STATION3_INFO.DATA" Source="STATION3.DATA"/>
+          <Connection Comment="" Destination="QUERY_STATION4.ROBOT1" Source="STATION4_INFO.ROBOT1"/>
+          <Connection Comment="" Destination="QUERY_STATION4.COUNT" Source="STATION4_INFO.COUNT"/>
+          <Connection Comment="" Destination="QUERY_STATION4.LUM" Source="STATION4_INFO.LUM"/>
+          <Connection Comment="" Destination="QUERY_STATION4.P" Source="STATION4_INFO.P"/>
+          <Connection Comment="" Destination="QUERY_STATION4.H" Source="STATION4_INFO.H"/>
+          <Connection Comment="" Destination="QUERY_STATION4.TEMP" Source="STATION4_INFO.TEMP"/>
+          <Connection Comment="" Destination="QUERY_STATION4.STATUS" Source="STATION4_INFO.STATUS"/>
+          <Connection Comment="" Destination="STATION4_INFO.DATA" Source="STATION4.DATA"/>
+          <Connection Comment="" Destination="WOOD_DECODER.B" Source="STATION2_INFO.B"/>
+          <Connection Comment="" Destination="QUERY_STATION2.B" Source="STATION2_INFO.B"/>
+          <Connection Comment="" Destination="WOOD_DECODER.G" Source="STATION2_INFO.G"/>
+          <Connection Comment="" Destination="QUERY_STATION2.G" Source="STATION2_INFO.G"/>
+          <Connection Comment="" Destination="WOOD_DECODER.R" Source="STATION2_INFO.R"/>
+          <Connection Comment="" Destination="QUERY_STATION2.R" Source="STATION2_INFO.R"/>
+          <Connection Comment="" Destination="QUERY_STATION2.DIM" Source="STATION2_INFO.DIM"/>
+          <Connection Comment="" Destination="QUERY_STATION2.COUNT" Source="STATION2_INFO.COUNT"/>
+          <Connection Comment="" Destination="QUERY_STATION2.LUM" Source="STATION2_INFO.LUM"/>
+          <Connection Comment="" Destination="QUERY_STATION2.P" Source="STATION2_INFO.P"/>
+          <Connection Comment="" Destination="QUERY_STATION2.H" Source="STATION2_INFO.H"/>
+          <Connection Comment="" Destination="QUERY_STATION2.TEMP" Source="STATION2_INFO.TEMP"/>
+          <Connection Comment="" Destination="QUERY_STATION2.STATUS" Source="STATION2_INFO.STATUS"/>
+          <Connection Comment="" Destination="STATION2_INFO.DATA" Source="STATION2.DATA"/>
+          <Connection Comment="" Destination="QUERY_STATION1.COUNT" Source="STATION1_INFO.COUNT"/>
+          <Connection Comment="" Destination="QUERY_STATION1.LUM" Source="STATION1_INFO.LUM"/>
+          <Connection Comment="" Destination="QUERY_STATION1.P" Source="STATION1_INFO.P"/>
+          <Connection Comment="" Destination="QUERY_STATION1.H" Source="STATION1_INFO.H"/>
+          <Connection Comment="" Destination="QUERY_STATION1.TEMP" Source="STATION1_INFO.TEMP"/>
+          <Connection Comment="" Destination="QUERY_STATION1.STATUS" Source="STATION1_INFO.STATUS"/>
+          <Connection Comment="" Destination="STATION1_INFO.DATA" Source="STATION1.DATA"/>
+          <Connection Comment="" Destination="CONTROL_QUERY5.STATE" Source="STATION5_CONTROL.STATE"/>
+          <Connection Comment="" Destination="CONTROL_QUERY4.STATE" Source="STATION4_CONTROL.STATE"/>
+          <Connection Comment="" Destination="CONTROL_QUERY3.STATE" Source="STATION3_CONTROL.STATE"/>
+          <Connection Comment="" Destination="CONTROL_QUERY2.STATE" Source="STATION2_CONTROL.STATE"/>
+          <Connection Comment="" Destination="CONCAT_QUERY_CONTROL.QUERY1" Source="CONTROL_QUERY1.QUERY"/>
+          <Connection Comment="" Destination="CONCAT_QUERY_CONTROL.QUERY2" Source="CONTROL_QUERY2.QUERY"/>
+          <Connection Comment="" Destination="CONCAT_QUERY_CONTROL.QUERY3" Source="CONTROL_QUERY3.QUERY"/>
+          <Connection Comment="" Destination="CONCAT_QUERY_CONTROL.QUERY4" Source="CONTROL_QUERY4.QUERY"/>
+          <Connection Comment="" Destination="CONCAT_QUERY_CONTROL.QUERY5" Source="CONTROL_QUERY5.QUERY"/>
+          <Connection Comment="" Destination="POSTGRE_DB_QUERY_CONTROL.QUERY" Source="CONCAT_QUERY_CONTROL.QUERY"/>
+          <Connection Comment="" Destination="CONCAT_QUERY_STATIONS.QUERY1" Source="QUERY_STATION1.QUERY"/>
+          <Connection Comment="" Destination="CONCAT_QUERY_STATIONS.QUERY2" Source="QUERY_STATION2.QUERY"/>
+          <Connection Comment="" Destination="CONCAT_QUERY_STATIONS.QUERY3" Source="QUERY_STATION3.QUERY"/>
+          <Connection Comment="" Destination="CONCAT_QUERY_STATIONS.QUERY4" Source="QUERY_STATION4.QUERY"/>
+          <Connection Comment="" Destination="CONCAT_QUERY_STATIONS.QUERY5" Source="QUERY_STATION5.QUERY"/>
+          <Connection Comment="" Destination="POSTGRE_DB_QUERY_STATIONS.QUERY" Source="CONCAT_QUERY_STATIONS.QUERY"/>
+          <Connection Comment="" Destination="STATION_CONTROL.ON" Source="POOLING_STATION1.DB_RESULT"/>
+        </DataConnections>
+      </FBNetwork>
+    </Resource>
+  </Device>
+  <Mapping From="SINF_0App.CONTROL_QUERY1" To="FORTE_PC.DIN1.CONTROL_QUERY1"/>
+  <Mapping From="SINF_0App.POOLING_CONTROL" To="FORTE_PC.DIN1.POOLING_CONTROL"/>
+  <Mapping From="SINF_0App.POOLING_STATION5" To="FORTE_PC.DIN1.POOLING_STATION5"/>
+  <Mapping From="SINF_0App.POOLING_STATION1" To="FORTE_PC.DIN1.POOLING_STATION1"/>
+  <Mapping From="SINF_0App.POOLING_STATION4" To="FORTE_PC.DIN1.POOLING_STATION4"/>
+  <Mapping From="SINF_0App.POOLING_STATION3" To="FORTE_PC.DIN1.POOLING_STATION3"/>
+  <Mapping From="SINF_0App.POOLING_STATION2" To="FORTE_PC.DIN1.POOLING_STATION2"/>
+  <Mapping From="SINF_0App.QUERY_STATION5" To="FORTE_PC.DIN1.QUERY_STATION5"/>
+  <Mapping From="SINF_0App.QUERY_STATION4" To="FORTE_PC.DIN1.QUERY_STATION4"/>
+  <Mapping From="SINF_0App.STATION5_CONTROL" To="FORTE_PC.DIN1.STATION5_CONTROL"/>
+  <Mapping From="SINF_0App.STATION4_CONTROL" To="FORTE_PC.DIN1.STATION4_CONTROL"/>
+  <Mapping From="SINF_0App.STATION3_CONTROL" To="FORTE_PC.DIN1.STATION3_CONTROL"/>
+  <Mapping From="SINF_0App.STATION2_CONTROL" To="FORTE_PC.DIN1.STATION2_CONTROL"/>
+  <Mapping From="SINF_0App.STATION1_CONTROL" To="FORTE_PC.DIN1.STATION1_CONTROL"/>
+  <Mapping From="SINF_0App.STATION3_INFO" To="FORTE_PC.DIN1.STATION3_INFO"/>
+  <Mapping From="SINF_0App.QUERY_STATION3" To="FORTE_PC.DIN1.QUERY_STATION3"/>
+  <Mapping From="SINF_0App.QUERY_STATION2" To="FORTE_PC.DIN1.QUERY_STATION2"/>
+  <Mapping From="SINF_0App.QUERY_STATION1" To="FORTE_PC.DIN1.QUERY_STATION1"/>
+  <Mapping From="SINF_0App.POSTGRE_DB_QUERY_STATIONS" To="FORTE_PC.DIN1.POSTGRE_DB_QUERY_STATIONS"/>
+  <Mapping From="SINF_0App.WOOD_COUNTER" To="FORTE_PC.DIN1.WOOD_COUNTER"/>
+  <Mapping From="SINF_0App.WOOD_DECODER_1" To="FORTE_PC.DIN1.WOOD_DECODER_1"/>
+  <Mapping From="SINF_0App.STATION5_INFO" To="FORTE_PC.DIN1.STATION5_INFO"/>
+  <Mapping From="SINF_0App.STATION5" To="FORTE_PC.DIN1.STATION5"/>
+  <Mapping From="SINF_0App.STATION3" To="FORTE_PC.DIN1.STATION3"/>
+  <Mapping From="SINF_0App.STATION4_INFO" To="FORTE_PC.DIN1.STATION4_INFO"/>
+  <Mapping From="SINF_0App.STATION4" To="FORTE_PC.DIN1.STATION4"/>
+  <Mapping From="SINF_0App.WOOD_DECODER" To="FORTE_PC.DIN1.WOOD_DECODER"/>
+  <Mapping From="SINF_0App.STATION2_INFO" To="FORTE_PC.DIN1.STATION2_INFO"/>
+  <Mapping From="SINF_0App.STATION2" To="FORTE_PC.DIN1.STATION2"/>
+  <Mapping From="SINF_0App.STATION1_INFO" To="FORTE_PC.DIN1.STATION1_INFO"/>
+  <Mapping From="SINF_0App.STATION1" To="FORTE_PC.DIN1.STATION1"/>
+  <Mapping From="SINF_0App.PROD_MAN" To="FORTE_PC.DIN1.PROD_MAN"/>
+  <Mapping From="SINF_0App.POSTGRE_DB_QUERY_CONTROL" To="FORTE_PC.DIN1.POSTGRE_DB_QUERY_CONTROL"/>
+  <Mapping From="SINF_0App.CONTROL_QUERY5" To="FORTE_PC.DIN1.CONTROL_QUERY5"/>
+  <Mapping From="SINF_0App.CONTROL_QUERY4" To="FORTE_PC.DIN1.CONTROL_QUERY4"/>
+  <Mapping From="SINF_0App.CONTROL_QUERY3" To="FORTE_PC.DIN1.CONTROL_QUERY3"/>
+  <Mapping From="SINF_0App.CONTROL_QUERY2" To="FORTE_PC.DIN1.CONTROL_QUERY2"/>
+  <Mapping From="SINF_0App.CONCAT_QUERY_CONTROL" To="FORTE_PC.DIN1.CONCAT_QUERY_CONTROL"/>
+  <Mapping From="SINF_0App.CONCAT_QUERY_STATIONS" To="FORTE_PC.DIN1.CONCAT_QUERY_STATIONS"/>
+  <Mapping From="SINF_0App.STATION_CONTROL" To="FORTE_PC.DIN1.STATION_CONTROL"/>
+  <Segment Comment="" Name="Ethernet" Type="Ethernet" dx1="1868.75" x="4675.0" y="1231.25">
+    <Attribute Comment="color" Name="Color" Type="STRING" Value="171,91,198"/>
+  </Segment>
+  <Link CommResource="FORTE_PC" Comment="" SegmentName="Ethernet"/>
+</System>

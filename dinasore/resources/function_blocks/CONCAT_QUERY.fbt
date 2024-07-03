@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE FBType SYSTEM "http://www.holobloc.com/xml/LibraryElement.dtd">
+<FBType Name="CONCAT_QUERY" OpcUa="SERVICE">
+    <InterfaceList>
+        <EventInputs>
+            <Event Name="INIT" Type="Event"/>
+            <Event Name="RUN" Type="Event" OpcUa="Method">
+                <With Var="QUERY1"/>
+                <With Var="QUERY2"/>
+                <With Var="QUERY3"/>
+                <With Var="QUERY4"/>
+                <With Var="QUERY5"/>         
+            </Event>
+        </EventInputs>
+        <EventOutputs>
+            <Event Name="INIT_O" Type="Event"/>
+            <Event Name="RUN_O" Type="Event">
+                <With Var="QUERY"/>
+            </Event>
+        </EventOutputs>
+        <InputVars>
+            <VarDeclaration Name="QUERY1" Type="STRING"/>
+            <VarDeclaration Name="QUERY2" Type="STRING"/>
+            <VarDeclaration Name="QUERY3" Type="STRING"/>
+            <VarDeclaration Name="QUERY4" Type="STRING"/>
+            <VarDeclaration Name="QUERY5" Type="STRING"/>
+        </InputVars>
+        <OutputVars>
+            <VarDeclaration Name="QUERY" Type="STRING"/>
+        </OutputVars>
+    </InterfaceList>
+</FBType>

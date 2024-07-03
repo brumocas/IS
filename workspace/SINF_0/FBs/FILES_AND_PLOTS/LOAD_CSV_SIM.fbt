@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE FBType SYSTEM "http://www.holobloc.com/xml/LibraryElement.dtd">
+<FBType Name="LOAD_CSV_SIM" OpcUa="DEVICE.SENSOR">
+    <InterfaceList>
+        <EventInputs>
+            <Event Name="INIT" Type="Event"/>
+            <Event Name="READ" Type="Event" OpcUa="Method">
+                <With Var="path"/>
+                <With Var="name"/>
+                <With Var="rate"/>
+            </Event>
+			<Event Name="START" Type="Event"/>
+        </EventInputs>
+        <EventOutputs>
+            <Event Name="INIT_O" Type="Event"/>
+            <Event Name="READ_O" Type="Event">
+                <With Var="status"/>
+				<With Var="data"/>
+            </Event>
+        </EventOutputs>
+        <InputVars>
+            <VarDeclaration Name="path" Type="STRING" OpcUa="Constant"/>
+            <VarDeclaration Name="name" Type="STRING" OpcUa="Constant"/>
+            <VarDeclaration Name="rate" Type="STRING" OpcUa="Constant"/>
+        </InputVars>
+        <OutputVars>
+            <VarDeclaration Name="status" Type="STRING" OpcUa="Variable"/>
+			<VarDeclaration Name="data" Type="STRING" OpcUa="Variable"/>
+        </OutputVars>
+    </InterfaceList>
+</FBType>
